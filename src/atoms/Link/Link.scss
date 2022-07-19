@@ -1,5 +1,9 @@
+$text_color:#FFFFFF;
 .link{
     &__text{
+        color:$text_color;
+        text-decoration: none;
+        text-transform: uppercase;
         &_active{
             
         }
