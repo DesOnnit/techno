@@ -1,11 +1,12 @@
-import Footer from "./organisms/Footer/Footer";
 import './App.scss'
+import {Route, Routes} from "react-router-dom";
+import Main from "./pages/Main/Main";
 
 function App() {
   return (
-    <div className="App">
-    <Footer/>
-    </div>
+        <Routes>
+          <Route path="/" element={<Main />}></Route>
+        </Routes>
   );
 }
 
