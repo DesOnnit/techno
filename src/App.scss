@@ -1,5 +1,10 @@
 @import url(./fonts/fonts.scss);
 .App{
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
     h1{
         font-family: "Avenir Next";
         font-size: 70px;
