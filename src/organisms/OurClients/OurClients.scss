@@ -1,0 +1,211 @@
+$text_color:#40E1EC;
+
+@mixin transform {
+    text-transform: uppercase;
+    transform: rotate(270deg);
+    position: absolute;
+}
+
+.ourClients {
+    margin-bottom: 155px;
+
+    &__content {
+        max-width: 1290px;
+        margin: 0 auto;
+        position: relative;
+        height: 364px;
+        display: flex;
+    }
+
+    &__title {
+        font-size: 112px !important;
+        line-height: 153px;
+        @include transform;
+        left: -135px;
+        top: 105px;
+        color: white;
+        text-shadow:
+            -0 -1px 0 #40E1EC,
+            0 -1px 0 #40E1EC,
+            -0 1px 0 #40E1EC,
+            0 1px 0 #40E1EC,
+            -1px -0 0 #40E1EC,
+            1px -0 0 #40E1EC,
+            -1px 0 0 #40E1EC,
+            1px 0 0 #40E1EC,
+            -1px -1px 0 #40E1EC,
+            1px -1px 0 #40E1EC,
+            -1px 1px 0 #40E1EC,
+            1px 1px 0 #40E1EC,
+            -1px -1px 0 #40E1EC,
+            1px -1px 0 #40E1EC,
+            -1px 1px 0 #40E1EC,
+            1px 1px 0 #40E1EC;
+    }
+
+    &__subtitle {
+        position: relative;
+        color: $text_color;
+        @include transform;
+        left: -40px;
+        top: 140px;
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 45px;
+        margin-left: 286px;
+        align-items: center;
+    }
+
+    @media screen and (min-width:1280px) and (max-width:1440px) {
+        margin-bottom: 150px;
+
+        &__content {
+            max-width: 1170px;
+            height: 306;
+        }
+
+        &__title {
+            font-size: 94px !important;
+            line-height: 128px;
+            left: -122px;
+            top: 120px;
+        }
+
+        &__subtitle {
+            top: 148px;
+        }
+
+        &__container {
+            column-gap: 42px;
+            margin-left: 175px;
+        }
+    }
+
+    @media screen and (min-width:1024px) and (max-width:1279px) {
+        margin-bottom: 100px;
+
+        &__content {
+            max-width: 940px;
+            height: 254px;
+        }
+
+        &__title {
+            font-size: 78px !important;
+            line-height: 107px;
+            left: -100px;
+            top: 73px;
+        }
+
+        &__subtitle {
+            top: 93px;
+            line-height: 68px;
+        }
+
+        &__container {
+            column-gap: 5px;
+            margin-left: 145px;
+        }
+
+        &__img {
+            width: 195px;
+        }
+    }
+
+    @media screen and (min-width:768px) and (max-width:1023px) {
+        margin-bottom: 100px;
+
+        &__content {
+            max-width: 640px;
+            height: 254px;
+        }
+
+        &__title {
+            font-size: 78px !important;
+            line-height: 107px;
+            left: -100px;
+            top: 73px;
+        }
+
+        &__subtitle {
+            top: 93px;
+            line-height: 68px;
+        }
+
+        &__container {
+            column-gap: 5px;
+            margin-left: 145px;
+        }
+
+        &__img {
+            width: 120px;
+        }
+    }
+
+    @media screen and (min-width:560px) and (max-width:767px) {
+        margin-bottom: 40px;
+
+        &__content {
+            max-width: 525px;
+            height: 257px;
+        }
+
+        &__title {
+            font-size: 40px !important;
+            line-height: 55px;
+            left: -50px;
+            top: 40px;
+        }
+
+        &__subtitle {
+            font-size: 30px !important;
+            line-height: 41px;
+            letter-spacing: -0.1em;
+            top: 48px;
+            left: -16px;
+        }
+
+        &__container {
+            column-gap: 45px;
+            grid-template-columns: repeat(2, 1fr);
+            margin-left: 128px;
+        }
+
+        &__img {
+            width: 176px;
+        }
+    }
+    @media screen and (min-width:320px) and (max-width:559px){
+        margin-bottom: 50px;
+        &__content {
+            max-width: 335px;
+            height: 432px;
+        }
+        &__title {
+            font-size: 40px !important;
+            line-height: 55px;
+            left: -50px;
+            top: 40px;
+        }
+
+        &__subtitle {
+            font-size: 30px !important;
+            line-height: 41px;
+            letter-spacing: -0.1em;
+            top: 48px;
+            left: -16px;
+        }
+
+        &__container {
+            column-gap: 0;
+            grid-template-columns: 1fr;
+            margin-left: 133px;
+        }
+
+        &__img {
+            width: 202px;
+        }
+    }
+}
