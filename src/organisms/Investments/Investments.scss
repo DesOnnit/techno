@@ -1,0 +1,199 @@
+$title_color:#40E1EC;
+$text_color:#FFFFFF;
+
+.investments {
+    background: url(./imgs/bg.svg) center no-repeat;
+    height: 534px;
+    background-size: cover;
+    padding: 100px 0;
+
+    &__content {
+        max-width: 1290px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        color: $title_color;
+    }
+
+    &__subtitle {
+        position: relative;
+        top: -20px;
+        text-transform: uppercase;
+        color: #2D2E43;
+        text-shadow:
+            -0 -1px 0 #40E1EC,
+            0 -1px 0 #40E1EC,
+            -0 1px 0 #40E1EC,
+            0 1px 0 #40E1EC,
+            -1px -0 0 #40E1EC,
+            1px -0 0 #40E1EC,
+            -1px 0 0 #40E1EC,
+            1px 0 0 #40E1EC,
+            -1px -1px 0 #40E1EC,
+            1px -1px 0 #40E1EC,
+            -1px 1px 0 #40E1EC,
+            1px 1px 0 #40E1EC,
+            -1px -1px 0 #40E1EC,
+            1px -1px 0 #40E1EC,
+            -1px 1px 0 #40E1EC,
+            1px 1px 0 #40E1EC;
+    }
+
+    &__text {
+        max-width: 590px;
+        line-height: 23px;
+        color: $text_color;
+        text-align: justify;
+        font-weight: 300 !important;
+    }
+
+    &__img {
+        position: absolute;
+        width: 520px;
+        height: 680px;
+        right: 0;
+        top: -180px;
+    }
+
+    @media screen and (min-width:1280px) and (max-width:1440px) {
+        height: 497px;
+        background: url(./imgs/bg_1280.svg) center no-repeat;
+        background-size: cover;
+
+        &__content {
+            max-width: 1170px;
+        }
+
+        &__subtitle {
+            top: -16px;
+        }
+
+        &__text {
+            max-width: 540px;
+            line-height: 21px
+        }
+
+        &__img {
+            width: 470px;
+            height: 666px;
+            top: -186px;
+            object-fit: cover;
+        }
+    }
+
+    @media screen and (min-width:1024px) and (max-width:1279px) {
+        padding: 50px 0;
+        height: 353px;
+        background: url(./imgs/bg_1024.svg) center no-repeat;
+        background-size: cover;
+
+        &__content {
+            max-width: 940px;
+        }
+
+        &__subtitle {
+            top: -12px;
+        }
+
+        &__text {
+            max-width: 470px;
+            line-height: 19px;
+        }
+
+        &__img {
+            width: 380px;
+            height: 481px;
+            top: -120px;
+            object-fit: cover;
+        }
+    }
+
+    @media screen and (min-width:768px) and (max-width:1023px) {
+        padding: 50px 0;
+        height: 391px;
+        background: url(./imgs/bg_768.svg) center no-repeat;
+        background-size: cover;
+
+        &__content {
+            max-width: 640px;
+        }
+
+        &__subtitle {
+            top: -12px;
+        }
+
+        &__text {
+            max-width: 340px;
+            text-align: left;
+            line-height: 19px;
+        }
+
+        &__img {
+            width: 220px;
+            height: 460px;
+            top: -86px;
+            object-fit: cover;
+        }
+    }
+
+    @media screen and (min-width:560px) and (max-width:767px) {
+        padding: 30px 0;
+        height: 357px;
+        background: url(./imgs/bg_560.svg) center no-repeat;
+        background-size: cover;
+
+        &__content {
+            max-width: 525px;
+        }
+
+        &__subtitle {
+            top: -10px;
+        }
+
+        &__text {
+            max-width: 270px;
+            text-align: left;
+            line-height: 16px;
+        }
+
+        &__img {
+            width: 210px;
+            height: 395px;
+            top: -50px;
+            object-fit: cover;
+        }
+    }
+
+    @media screen and (min-width:320px) and (max-width:559px) {
+        padding: 30px 0;
+        height: 560px;
+        background: url(./imgs/bg_375.svg) center no-repeat;
+        background-size: cover;
+
+        &__content {
+            max-width: 335px;
+        }
+
+        &__subtitle {
+            top: -10px;
+        }
+
+        &__text {
+            max-width: 280px;
+            text-align: left;
+            line-height: 16px;
+        }
+
+        &__img {
+            width: 335px;
+            height: 183px;
+            top: 216px;
+            object-fit: cover;
+        }
+    }
+}

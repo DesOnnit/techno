@@ -1,8 +1,9 @@
+$text_color:#FFFFFF;
 .link{
     &__text{
-        color: white;
-        text-transform: uppercase;
+        color:$text_color;
         text-decoration: none;
+        text-transform: uppercase;
         &_active{
             
         }
