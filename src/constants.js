@@ -1,6 +1,11 @@
 import projects_card1 from './imgs/projects_card1.svg'
 import projects_card2 from './imgs/projects_card2.svg'
 import projects_card3 from './imgs/projects_card3.svg'
+//картинки клиентов
+import client1 from './imgs/client1.svg'
+import client2 from './imgs/client2.svg'
+import client3 from './imgs/client3.svg'
+import client4 from './imgs/client4.svg'
 export const links =[
     {id:1, title:'услуги', link:''},
     {id:2, title:'проекты', link:''},
@@ -25,3 +30,9 @@ export const investments = {
     subtitle:'в инновации',
     text:'ООО “Техностиль”, благодаря собственной производственной базе и штату высококвалифицированных специалистов, имеет возможность импортозамещения и создания уникальных инновационных разработок'
 }
+export const our_clients = [
+    {id:1,title:'ОДК Кузнецов',src:client1},
+    {id:2,title:'ЭХП Росатом',src:client2},
+    {id:3,title:'СТМ Сервис',src:client3},
+    {id:4,title:'Самолет',src:client4},
+]
