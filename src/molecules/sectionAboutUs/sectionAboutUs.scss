@@ -1,0 +1,148 @@
+.sectionAboutUs{
+  padding: 150px 0;
+  max-width: 1290px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  .textBlock{
+    max-width: 577px;
+    &__header{
+      text-transform: uppercase;
+    }
+    &__quotes{
+      color: #40E1EC;
+    }
+    &__first{
+      margin-top: 30px;
+    }
+    &__second{
+      margin-top: 10px;
+    }
+  }
+  .previewBlock{
+    display: flex;
+    .cubes{
+      z-index: 1;
+      margin-top: 170px;
+      margin-right: -15px;
+      position: relative;
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      &__item{
+        margin-top: 10px;
+        &:first-child{
+          margin-top: 0;
+        }
+      }
+    }
+    &__working{
+      position: relative;
+      margin-right: -130px;
+      align-self: center;
+    }
+    &__factory{
+      align-self: center;
+    }
+  }
+  @media (min-width: 1280px) and (max-width: 1439px){
+    max-width: 1170px;
+
+  }
+  @media (min-width: 1024px) and (max-width: 1279px){
+    max-width: 940px;
+    padding: 100px 0;
+    .textBlock {
+      max-width: 400px;
+    }
+    .previewBlock{
+      .cubes{
+        margin-top: 140px;
+        &__item{
+          max-width: 25px;
+        }
+      }
+      &__working{
+        margin-right: -110px;
+        max-width: 260px;
+      }
+      &__factory{
+        max-width: 352px;
+      }
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1023px){
+    padding: 100px 0;
+    max-width: 640px;
+    .textBlock {
+      max-width: 330px;
+    }
+    .previewBlock{
+
+      .cubes{
+        margin-top: 90px;
+        margin-right: -8px;
+        &__item{
+          max-width: 15px;
+        }
+      }
+      &__working{
+        margin-right: -95px;
+        max-width: 167px;
+      }
+      &__factory{
+        max-width: 227px;
+      }
+    }
+  }
+  @media (min-width: 560px) and (max-width: 767px){
+    padding: 50px 0;
+    max-width: 525px;
+    .textBlock {
+      max-width: 260px;
+    }
+    .previewBlock{
+      .cubes{
+        margin-top: 60px;
+        margin-right: -8px;
+        &__item{
+          margin-top: 5px;
+          max-width: 14px;
+        }
+      }
+      &__working{
+        margin-right: -80px;
+        max-width: 136px;
+      }
+      &__factory{
+        max-width: 189px;
+      }
+    }
+  }
+  @media (min-width: 375px) and (max-width: 559px){
+    padding: 50px 0;
+    max-width: 335px;
+    display: block;
+    .textBlock {
+      max-width: 335px;
+    }
+    .previewBlock{
+      margin-top: 20px;
+      .cubes{
+        margin-top: 85px;
+        margin-right: -8px;
+        &__item{
+          margin-top: 5px;
+          max-width: 14px;
+        }
+      }
+      &__working{
+        margin-right: -70px;
+        max-width: 162px;
+      }
+      &__factory{
+        max-width: 226px;
+      }
+    }
+  }
+}
