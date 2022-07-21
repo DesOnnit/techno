@@ -1,0 +1,122 @@
+.SectionAdvantages-container{
+  background-color: #2D2E43;
+  .SectionAdvantages{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1290px;
+    margin: 0 auto 150px auto;
+    &__mainImg{
+      max-height: 452px;
+      transform: scale(1.2);
+    }
+    .cubes{
+      margin-left: -275px;
+      margin-bottom: -15px;
+      align-self: end;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      &__item{
+        margin-top: 8px;
+      }
+    }
+    .textBlock{
+      color: white;
+      max-width: 475px;
+      &-advantages{
+        &__title{
+          margin-left: -30px;
+        }
+      }
+      &-mission{
+        margin-left: -30px;
+        margin-top: 30px;
+      }
+    }
+    @media (min-width: 1280px) and (max-width: 1439px){
+      max-width: 1170px;
+      &__mainImg{
+        max-height: 383px;
+      }
+      .cubes{
+        margin-left: -235px;
+      }
+    }
+    @media (min-width: 1024px) and (max-width: 1279px){
+      max-width: 940px;
+      &__mainImg{
+        transform: scale(1.1);
+        max-height: 376px;
+      }
+      .cubes{
+        margin-left: -55px;
+        margin-bottom: -10px;
+      }
+    }
+    @media (min-width: 768px) and (max-width: 1023px){
+      margin-bottom: 100px;
+      padding: 50px 0;
+      max-width: 640px;
+      &__mainImg{
+
+        transform: scale(0.75);
+        max-height: 383px;
+      }
+      .textBlock{
+
+        max-width: 260px;
+        &-mission{
+          margin-top: 10px;
+        }
+      }
+      .cubes{
+        margin-left: -100px;
+        margin-bottom: 60px;
+        &__item{
+          max-width: 24px;
+        }
+      }
+    }
+    @media (min-width: 560px) and (max-width: 767px){
+      margin-bottom: 50px;
+      padding: 50px 0;
+      max-width: 525px;
+      &__mainImg{
+        transform: scale(0.7);
+        max-height: 255px;
+      }
+      .textBlock{
+        max-width: 260px;
+        &-mission{
+          margin-top: 10px;
+        }
+      }
+      .cubes{
+        margin-left: -85px;
+        margin-bottom: 55px;
+        &__item{
+          max-width: 14px;
+        }
+      }
+    }
+    @media (min-width: 375px) and (max-width: 559px){
+      margin-bottom: 50px;
+      padding: 50px 0;
+      flex-direction: column-reverse;
+      max-width: 335px;
+      &__mainImg{
+        margin-top: 20px;
+        transform: scale(1);
+        max-height: 335px;
+      }
+      .textBlock{
+        max-width: 275px;
+      }
+      .cubes{
+        position: absolute;
+        margin-right: -10px;
+      }
+    }
+  }
+}

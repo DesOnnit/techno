@@ -6,12 +6,14 @@ import Projects from '../../organisms/Projects/Projects';
 import "./Main.scss"
 import SectionAboutUs from "../../molecules/sectionAboutUs/sectionAboutUs";
 import SectionGraphicsAdvantages from "../../molecules/sectionGraphicsAdvantages/sectionGraphicsAdvantages";
+import SectionAdvantages from "../../molecules/sectionAdvantages/sectionAdvantages";
 
 const Main = () => {
     return (
         <div className="main">
             <SectionAboutUs/>
             <SectionGraphicsAdvantages/>
+            <SectionAdvantages/>
             <Investments/>
             <Projects/>
             <OurClients/>
