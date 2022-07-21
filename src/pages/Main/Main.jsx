@@ -8,6 +8,7 @@ import Services from '../../organisms/Services/Services';
 import "./Main.scss"
 import SectionAboutUs from "../../molecules/sectionAboutUs/sectionAboutUs";
 import SectionGraphicsAdvantages from "../../molecules/sectionGraphicsAdvantages/sectionGraphicsAdvantages";
+import SectionAdvantages from "../../molecules/sectionAdvantages/sectionAdvantages";
 
 const Main = () => {
     return (
@@ -17,6 +18,7 @@ const Main = () => {
             <Directive/>
             <Services/>
             <Benefits/>
+            <SectionAdvantages/>
             <Investments/>
             <Projects/>
             <OurClients/>
