@@ -1,6 +1,7 @@
 import { investments } from '../../constants'
 import img from './imgs/img.svg'
 import './Investments.scss'
+import Button from '../../atoms/Button/Button'
 export default function Investments() {
     return (
         <section className='investments'>
@@ -9,7 +10,8 @@ export default function Investments() {
                 <h1 className='investments__subtitle'>{investments.subtitle}</h1>
                 <p className='investments__text'>{investments.text}</p>
                 <div className='investments__buttons'>
-
+                    <Button name='Инвестировать в проект'/>
+                    <Button name='Подробнее' another_button={true}/>
                 </div>
                 <img className='investments__img' alt='Техностиль' src={img} />
             </div>

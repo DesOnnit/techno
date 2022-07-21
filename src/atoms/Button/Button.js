@@ -3,7 +3,7 @@ import "./Button.scss"
 
 const Button = (props) => {
     return (
-        <button className="button">{props.name}</button>
+        <button className={!props.another_button?"button":"another-button"}><h5>{props.name}</h5></button>
     );
 };
 
