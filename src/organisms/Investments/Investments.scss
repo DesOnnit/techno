@@ -52,6 +52,16 @@ $text_color:#FFFFFF;
         font-weight: 300 !important;
     }
 
+    &__buttons {
+        margin-top: 30px;
+
+        button {
+            &:first-child {
+                margin-right: 20px;
+            }
+        }
+    }
+
     &__img {
         position: absolute;
         width: 520px;
@@ -105,6 +115,10 @@ $text_color:#FFFFFF;
             line-height: 19px;
         }
 
+        &__buttons {
+            margin-top: 20px;
+        }
+
         &__img {
             width: 380px;
             height: 481px;
@@ -131,6 +145,16 @@ $text_color:#FFFFFF;
             max-width: 340px;
             text-align: left;
             line-height: 19px;
+        }
+
+        &__buttons {
+            margin-top: 20px;
+
+            button {
+                &:first-child {
+                    margin-right: 10px;
+                }
+            }
         }
 
         &__img {
@@ -161,6 +185,25 @@ $text_color:#FFFFFF;
             line-height: 16px;
         }
 
+        &__buttons {
+            display: flex;
+            flex-direction: column;
+            max-width: 192px;
+            margin-top: 20px;
+
+            button {
+                &:first-child {
+                    margin-right: 0;
+                    margin-bottom: 10px;
+                }
+
+                &:last-child {
+                    max-width: 100px;
+                    padding: 10px 0;
+                }
+            }
+        }
+
         &__img {
             width: 210px;
             height: 395px;
@@ -187,6 +230,25 @@ $text_color:#FFFFFF;
             max-width: 280px;
             text-align: left;
             line-height: 16px;
+        }
+
+        &__buttons {
+            display: flex;
+            flex-direction: column;
+            max-width: 192px;
+            margin-top: 220px;
+
+            button {
+                &:first-child {
+                    margin-right: 0;
+                    margin-bottom: 10px;
+                }
+
+                &:last-child {
+                    max-width: 100px;
+                    padding: 10px 0;
+                }
+            }
         }
 
         &__img {
