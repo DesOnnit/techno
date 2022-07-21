@@ -1,0 +1,168 @@
+.SectionGraphicsAdvantages{
+  margin: 0 auto;
+  margin-bottom: 150px;
+  display: flex;
+  .SectionGraphicsAdvantages__mainPreview {
+    position: relative;
+    width: 100vw;
+    height: 600px;
+    background: linear-gradient(269.86deg, #2D2E43 16.44%, rgba(45, 46, 67, 0) 99.89%), url("imgs/main-big.png") center no-repeat;
+    display: flex;
+    .graphics-container{
+      max-width: 1440px;
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: flex-end;
+      .graphics {
+        right: 0;
+        align-self: center;
+        &-item {
+          margin-top: 20px;
+          display: flex;
+          align-items: center;
+
+          &:first-child {
+            margin-top: 0;
+          }
+          &-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 150px;
+            height: 160px;
+            background: url("./imgs/Ellipse 2.png") center no-repeat;
+            background-size: contain;
+            &__content {
+              margin-right: 7px;
+              color: white;
+            }
+          }
+
+          &__description {
+            line-height: 35.16px;
+            max-width: 310px;
+            margin-left: 60px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 1280px) and (max-width: 1439px){
+    .SectionGraphicsAdvantages__mainPreview {
+      height: 556px;
+      background: linear-gradient(269.86deg, #2D2E43 16.44%, rgba(45, 46, 67, 0) 99.89%), url("imgs/main-1280.png") center no-repeat;
+      .graphics-container {
+        max-width: 1170px;
+        .graphics{
+          &-item{
+            &-number{
+              width: 120px;
+              height: 120px;
+            }
+          }
+        }
+      }
+    }
+
+  }
+  @media (min-width: 1024px) and (max-width: 1279px){
+    .SectionGraphicsAdvantages__mainPreview {
+      height: 460px;
+      background: linear-gradient(269.86deg, #2D2E43 16.44%, rgba(45, 46, 67, 0) 99.89%), url("imgs/main-1024.png") center no-repeat;
+      .graphics-container {
+        max-width: 940px;
+        .graphics{
+          &-item{
+            &-number{
+              width: 100px;
+              height: 100px;
+            }
+            &__description{
+              margin-left: 30px;
+              max-width: 320px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1023px){
+    .SectionGraphicsAdvantages__mainPreview {
+      height: 460px;
+      background: linear-gradient(270.14deg, #2D2E43 30.63%, rgba(45, 46, 67, 0) 99.86%), url("imgs/main-768.png") center no-repeat;
+      .graphics-container {
+        max-width: 640px;
+        .graphics{
+          &-item{
+            &-number{
+              width: 100px;
+              height: 100px;
+            }
+            &__description{
+              margin-left: 20px;
+              max-width: 250px;
+            }
+          }
+        }
+      }
+    }
+
+  }
+  @media (min-width: 560px) and (max-width: 767px){
+    .SectionGraphicsAdvantages__mainPreview {
+      height: 800px;
+      background: linear-gradient(357.66deg, #2D2E43 7%, rgba(45, 46, 67, 0) 98.03%), url("imgs/main-375.png") center no-repeat;
+      background-size: cover;
+      .graphics-container {
+        max-width: 525px;
+        justify-content: center;
+        .graphics{
+          position: relative;
+          top: -100px;
+          align-self: end;
+          &-item{
+            &-number{
+              width: 80px;
+              height: 80px;
+            }
+            &__description{
+              margin-left: 10px;
+              max-width: 200px;
+            }
+          }
+        }
+      }
+    }
+
+  }
+  @media (min-width: 375px) and (max-width: 559px){
+    .SectionGraphicsAdvantages__mainPreview {
+      height: 650px;
+      background: linear-gradient(0.75deg, #2D2E43 36.84%, rgba(45, 46, 67, 0) 99.35%), url("imgs/main-375.png") center no-repeat;
+      background-size: cover;
+      .graphics-container {
+        justify-content: center;
+        max-width: 335px;
+        .graphics{
+          position: relative;
+          top: -50px;
+          align-self: end;
+          &-item{
+            &-number{
+              width: 80px;
+              height: 80px;
+            }
+            &__description{
+              margin-left: 10px;
+              max-width: 200px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
