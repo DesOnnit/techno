@@ -1,0 +1,97 @@
+.services {
+    margin-top: 150px;
+    margin-bottom: 150px;
+
+    &__content {
+        max-width: 1290px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        line-height: 96px;
+        text-transform: uppercase;
+        color: #40E1EC;
+        margin-bottom: 50px;
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(2, 630px);
+        grid-template-rows: repeat(7, 250px);
+        gap: 30px;
+    }
+    @media screen and (min-width:1280px) and (max-width:1440px){
+        &__content {
+            max-width: 1170px;
+        }
+        &__title {
+            line-height: 82px;
+            margin-bottom: 30px;
+        }
+        &__container {
+            grid-template-columns: repeat(2, 570px);
+        }
+    }
+    @media screen and (min-width:1024px) and (max-width:1279px){
+        margin: 100px 0;
+        &__content {
+            max-width: 940px;
+        }
+        &__title {
+            line-height: 68px;
+            margin-bottom: 30px;
+        }
+        &__container {
+            gap:20px;
+            grid-template-columns: repeat(2, 460px);
+            grid-template-rows: repeat(7, 200px);
+        }
+    }
+    @media screen and (min-width:768px) and (max-width:1023px){
+        margin: 100px 0;
+        &__content {
+            max-width: 640px;
+        }
+        &__title {
+            line-height: 68px;
+            margin-bottom: 30px;
+        }
+        &__container {
+            column-gap: 20px;
+            row-gap: 10px;
+            grid-template-columns: repeat(2, 310px);
+            grid-template-rows: repeat(7, 160px);
+        }
+    }
+    @media screen and (min-width:560px) and (max-width:767px){
+        margin: 50px 0;
+        &__content {
+            max-width: 525px;
+        }
+        &__title {
+            line-height: 68px;
+            margin-bottom: 30px;
+        }
+        &__container {
+            column-gap: 15px;
+            row-gap: 10px;
+            grid-template-columns: repeat(2, 255px);
+            grid-template-rows: repeat(7, 100px);
+        }
+    }
+    @media screen and (min-width:320px) and (max-width:559px){
+        margin: 50px 0;
+        &__content {
+            max-width: 335px;
+        }
+        &__title {
+            line-height: 55px;
+            margin-bottom: 30px;
+        }
+        &__container {
+            row-gap: 10px;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(13, 100px);
+        }
+    }
+}
