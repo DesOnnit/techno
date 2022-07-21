@@ -5,6 +5,7 @@ import Main from "./pages/Main/Main";
 import Footer from './organisms/Footer/Footer';
 import Header from "./molecules/header/header";
 import Services from './organisms/Services/Services';
+import Projects from './organisms/Projects/Projects';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
               <Routes>
                   <Route path="/" element={<Main />}></Route>
                   <Route path="/services" element={<Services cub={true} />}></Route>
+                  <Route path="/projects" element={<Projects cub={true} page={12} />}></Route>
               </Routes>
               <Footer/>
           </div>
