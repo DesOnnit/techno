@@ -1,7 +1,7 @@
 import React from 'react';
-import mainImg from "./imgs/call-me-lamb-0KkHzrOQ35Y-unsplash.png"
-import cube from "./imgs/Rectangle 25.svg"
-import "./sectionAdvantages.scss"
+import mainImg from "./imgs/call-me-lamb-0KkHzrOQ35Y-unsplash.png";
+import cube from "./imgs/Rectangle 25.svg";
+import "./sectionAdvantages.scss";
 
 const SectionAdvantages = () => {
     return (
