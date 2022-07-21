@@ -79,6 +79,9 @@ $bg_color:#F8F8F8;
     @media screen and (min-width:320px) and (max-width:559px){
         &:last-child {
             grid-column: span 1;
+            h4{
+                max-width: 168px;
+            }
             img{
                 right: -125px; 
             }

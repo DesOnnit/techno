@@ -12,6 +12,9 @@
         text-transform: uppercase;
         color: #40E1EC;
         margin-bottom: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     &__container {
@@ -27,6 +30,9 @@
         &__title {
             line-height: 82px;
             margin-bottom: 30px;
+            &_img{
+                height: 24px;
+            }
         }
         &__container {
             grid-template-columns: repeat(2, 570px);
@@ -40,6 +46,9 @@
         &__title {
             line-height: 68px;
             margin-bottom: 30px;
+            &_img{
+                height: 25px;
+            }
         }
         &__container {
             gap:20px;
@@ -55,6 +64,9 @@
         &__title {
             line-height: 68px;
             margin-bottom: 30px;
+            &_img{
+                height: 25px;
+            }
         }
         &__container {
             column-gap: 20px;
@@ -71,6 +83,9 @@
         &__title {
             line-height: 68px;
             margin-bottom: 30px;
+            &_img{
+                height: 14px;
+            }
         }
         &__container {
             column-gap: 15px;
@@ -87,6 +102,9 @@
         &__title {
             line-height: 55px;
             margin-bottom: 30px;
+            &_img{
+                height: 14px;
+            }
         }
         &__container {
             row-gap: 10px;

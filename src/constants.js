@@ -30,7 +30,7 @@ import directive_card6 from './imgs/directive_card6.svg'
 import directive_card7 from './imgs/directive_card7.svg'
 
 export const links = [
-    { id: 1, title: 'услуги', link: '' },
+    { id: 1, title: 'услуги', link: 'services' },
     { id: 2, title: 'проекты', link: '' },
     { id: 3, title: 'инновации', link: '' },
     { id: 4, title: 'клиенты', link: '' },

@@ -28,7 +28,7 @@ const Header = () => {
                         <div className="navbar__links">
                             {links.map((link) =>
                                 <div className="navbar__links_item">
-                                    <LinkMenu item={link}/>
+                                    <LinkMenu item={link} active={true}/>
                                 </div>
                             )}
                         </div>
