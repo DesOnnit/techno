@@ -6,6 +6,22 @@ import client1 from './imgs/client1.svg'
 import client2 from './imgs/client2.svg'
 import client3 from './imgs/client3.svg'
 import client4 from './imgs/client4.svg'
+import client5 from './imgs/client5.svg'
+import client6 from './imgs/client6.svg'
+import client7 from './imgs/client7.svg'
+import client8 from './imgs/client8.svg'
+import client9 from './imgs/client9.svg'
+import client10 from './imgs/client10.svg'
+import client11 from './imgs/client11.svg'
+import client12 from './imgs/client12.svg'
+import client13 from './imgs/client13.svg'
+import client14 from './imgs/client14.svg'
+import client15 from './imgs/client15.svg'
+import client16 from './imgs/client16.svg'
+import client17 from './imgs/client17.svg'
+import client18 from './imgs/client18.svg'
+import client19 from './imgs/client19.svg'
+import client20 from './imgs/client20.svg'
 //картинки услуг
 import services_card1 from './imgs/services-card1.svg'
 import services_card2 from './imgs/services-card2.svg'
@@ -33,7 +49,7 @@ export const links = [
     { id: 1, title: 'услуги', link: 'services' },
     { id: 2, title: 'проекты', link: 'projects' },
     { id: 3, title: 'инновации', link: '' },
-    { id: 4, title: 'клиенты', link: '' },
+    { id: 4, title: 'клиенты', link: 'clients' },
     { id: 5, title: 'партнеры', link: '' },
     { id: 6, title: 'о нас', link: '' },
     { id: 7, title: 'контакты', link: '' },
@@ -68,6 +84,22 @@ export const our_clients = [
     { id: 2, title: 'ЭХП Росатом', src: client2 },
     { id: 3, title: 'СТМ Сервис', src: client3 },
     { id: 4, title: 'Самолет', src: client4 },
+    { id: 5, title: 'Вымпел', src: client5 },
+    { id: 6, title: 'Рубин', src: client6 },
+    { id: 7, title: 'НИПТБ Онега', src: client7 },
+    { id: 8, title: 'ОАО Пролетарский завод', src: client8 },
+    { id: 9, title: 'МССЗ', src: client9 },
+    { id: 10, title: 'СЕВМАШ', src: client10 },
+    { id: 11, title: 'Красный Октябрь', src: client11 },
+    { id: 12, title: 'Климов', src: client12 },
+    { id: 13, title: '', src: client13 },
+    { id: 14, title: 'Редуктор-ПМ', src: client14 },
+    { id: 15, title: 'Пермский Моторный завод', src: client15 },
+    { id: 16, title: '', src: client16 },
+    { id: 17, title: 'Дальневосточный завод Звезда', src: client17 },
+    { id: 18, title: 'Звездочка', src: client18 },
+    { id: 19, title: '', src: client19 },
+    { id: 20, title: 'Адмиралтейские верфи', src: client20 },
 ]
 export const benefits = [
     { id: 1, title: 'РАБОТАЕМ ПО ВСЕЙ РОССИИ', subtitle: 'Благодаря своему географическому расположению, на производственных площадках в г.Санкт-Петербурге и г.Самара, мы имеем возможность работы практически со всеми регионами России, обладающими потенциально высокими машиностроительными и энергетическими мощностями.' },

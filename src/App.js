@@ -1,4 +1,3 @@
-
 import './App.scss'
 import {Route, Routes} from "react-router-dom";
 import Main from "./pages/Main/Main";
@@ -6,6 +5,8 @@ import Footer from './organisms/Footer/Footer';
 import Header from "./molecules/header/header";
 import Services from './organisms/Services/Services';
 import Projects from './organisms/Projects/Projects';
+import Clients from './pages/Clients/Clients';
+
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
                   <Route path="/" element={<Main />}></Route>
                   <Route path="/services" element={<Services cub={true} />}></Route>
                   <Route path="/projects" element={<Projects cub={true} page={12} />}></Route>
+                  <Route path="/clients" element={<Clients/>}></Route>
               </Routes>
               <Footer/>
           </div>

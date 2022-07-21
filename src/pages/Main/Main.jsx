@@ -16,9 +16,9 @@ const Main = () => {
             <SectionAboutUs/>
             <SectionGraphicsAdvantages/>
             <Directive/>
+            <SectionAdvantages/>
             <Services/>
             <Benefits/>
-            <SectionAdvantages/>
             <Investments/>
             <Projects/>
             <OurClients/>
