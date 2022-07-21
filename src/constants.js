@@ -20,6 +20,15 @@ import services_card10 from './imgs/services-card10.svg'
 import services_card11 from './imgs/services-card11.svg'
 import services_card12 from './imgs/services-card12.svg'
 import services_card13 from './imgs/services-card13.svg'
+//картинки направлений
+import directive_card1 from './imgs/directive_card1.svg'
+import directive_card2 from './imgs/directive_card2.svg'
+import directive_card3 from './imgs/directive_card3.svg'
+import directive_card4 from './imgs/directive_card4.svg'
+import directive_card5 from './imgs/directive_card5.svg'
+import directive_card6 from './imgs/directive_card6.svg'
+import directive_card7 from './imgs/directive_card7.svg'
+
 export const links = [
     { id: 1, title: 'услуги', link: '' },
     { id: 2, title: 'проекты', link: '' },
@@ -82,6 +91,15 @@ export const services_cards = [
     { id: 11, title: 'Комплектующие',src:services_card11},
     { id: 12, title: 'Кластерное хромирование',src:services_card12},
     { id: 13, title: 'Очистные сооружения',src:services_card13},
+]
+export const directive_cards = [
+    { id: 1, title: 'машиностроение',src:directive_card1},
+    { id: 2, title: 'Нефтяное, нефтехимическое и газовое оборудование',src:directive_card2},
+    { id: 3, title: 'ГОРно-добывающая промышленность',src:directive_card3},
+    { id: 4, title: 'судостроительный комплекс',src:directive_card4},
+    { id: 5, title: 'атомная энергетика',src:directive_card5},
+    { id: 6, title: 'железно-дорожное оборудование',src:directive_card6},
+    { id: 7, title: 'цементная промышленность и производство бетона',src:directive_card7},
 ]
 
 
