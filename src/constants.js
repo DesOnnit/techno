@@ -6,6 +6,20 @@ import client1 from './imgs/client1.svg'
 import client2 from './imgs/client2.svg'
 import client3 from './imgs/client3.svg'
 import client4 from './imgs/client4.svg'
+//картинки услуг
+import services_card1 from './imgs/services-card1.svg'
+import services_card2 from './imgs/services-card2.svg'
+import services_card3 from './imgs/services-card3.svg'
+import services_card4 from './imgs/services-card4.svg'
+import services_card5 from './imgs/services-card5.svg'
+import services_card6 from './imgs/services-card6.svg'
+import services_card7 from './imgs/services-card7.svg'
+import services_card8 from './imgs/services-card8.svg'
+import services_card9 from './imgs/services-card9.svg'
+import services_card10 from './imgs/services-card10.svg'
+import services_card11 from './imgs/services-card11.svg'
+import services_card12 from './imgs/services-card12.svg'
+import services_card13 from './imgs/services-card13.svg'
 export const links = [
     { id: 1, title: 'услуги', link: '' },
     { id: 2, title: 'проекты', link: '' },
@@ -54,7 +68,21 @@ export const benefits = [
     { id: 5, title: 'МЕРОПРИЯТИЯ ПО ГО И ЧС' },
     { id: 6, title: 'КОМПЛЕКСНАЯ ПОСТАВКА ОБОРУДОВАНИЯ' },
 ]
-
+export const services_cards = [
+    { id: 1, title: 'Проектные и конструкторские работы',src:services_card1},
+    { id: 2, title: 'Технологические трубопроводы',src:services_card2},
+    { id: 3, title: 'Теплоизоляция',src:services_card3},
+    { id: 4, title: 'Воздуховоды',src:services_card4},
+    { id: 5, title: 'Емкостное оборудование',src:services_card5},
+    { id: 6, title: 'Технологическое оборудование Энергетическое оборудование',src:services_card6},
+    { id: 7, title: 'Металлоконструкции',src:services_card7},
+    { id: 8, title: 'Системы управления',src:services_card8},
+    { id: 9, title: 'Металлообработка',src:services_card9},
+    { id: 10, title: 'Системы погрузки и разгрузки вагонов',src:services_card10},
+    { id: 11, title: 'Комплектующие',src:services_card11},
+    { id: 12, title: 'Кластерное хромирование',src:services_card12},
+    { id: 13, title: 'Очистные сооружения',src:services_card13},
+]
 
 
 
