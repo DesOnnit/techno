@@ -1,0 +1,78 @@
+.SectionMainProduction {
+  max-width: 1290px;
+  margin: 0 auto;
+
+  &__title {
+    color: #40E1EC;
+  }
+
+  &__description {
+    max-width: 960px;
+    margin-top: 20px;
+  }
+
+  &-photo {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+
+    &__item {
+
+    }
+  }
+
+  @media (min-width: 1280px) and (max-width: 1439px) {
+    max-width: 1170px;
+    &-photo{
+      &__item{
+        max-width: 370px;
+      }
+    }
+  }
+  @media (min-width: 1024px) and (max-width: 1279px) {
+    max-width: 940px;
+    &-photo{
+      margin-top: 100px;
+      margin-bottom: 100px;
+      &__item{
+        max-width: 300px;
+      }
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    max-width: 640px;
+    &-photo{
+      margin-bottom: 100px;
+      margin-top: 100px;
+      grid-template-columns: repeat(2, 1fr);
+      &__item{
+        max-width: 310px;
+      }
+    }
+  }
+  @media (min-width: 560px) and (max-width: 767px) {
+    max-width: 525px;
+    &-photo{
+      margin-top: 50px;
+      margin-bottom: 50px;
+      grid-template-columns: repeat(2, 1fr);
+      &__item{
+        max-width: 255px;
+      }
+    }
+  }
+  @media (min-width: 320px) and (max-width: 559px) {
+    max-width: 335px;
+    &-photo{
+      margin-bottom: 50px;
+      margin-top: 50px;
+      display: block;
+      &__item{
+        max-width: 335px;
+      }
+    }
+  }
+}
