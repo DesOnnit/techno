@@ -57,9 +57,9 @@ import investment7 from "./imgs/investment7.png"
 export const links = [
     { id: 1, title: 'услуги', link: 'services' },
     { id: 2, title: 'проекты', link: 'projects' },
-    { id: 3, title: 'инновации', link: '' },
+    { id: 3, title: 'инновации', link: 'investments' },
     { id: 4, title: 'клиенты', link: 'clients' },
-    { id: 5, title: 'партнеры', link: '' },
+    { id: 5, title: 'партнеры', link: 'partners' },
     { id: 6, title: 'о нас', link: '' },
     { id: 7, title: 'контакты', link: 'contacts' },
 ]
