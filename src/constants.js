@@ -52,7 +52,7 @@ export const links = [
     { id: 4, title: 'клиенты', link: 'clients' },
     { id: 5, title: 'партнеры', link: '' },
     { id: 6, title: 'о нас', link: '' },
-    { id: 7, title: 'контакты', link: '' },
+    { id: 7, title: 'контакты', link: 'contacts' },
 ]
 export const contants_links = {
     telephone: '+7 499 999 44 99',
@@ -143,7 +143,13 @@ export const directive_cards = [
     { id: 6, title: 'железно-дорожное оборудование',src:directive_card6},
     { id: 7, title: 'цементная промышленность и производство бетона',src:directive_card7},
 ]
-
+export const contacts = [
+{id: 1, title: 'Адрес',text:'443081 г. Самара, ул. Советской Армии, 181 Офис 312'},
+{id: 2, title: 'Телефоны',text:'(846) 240-82-35 (846) 33-103-83'},
+{id: 3, title: 'Почта',text:'info@texnostyle.ru'},
+{id: 4, title: 'Генеральный директор',text:'Вертецкий Вячеслав Александрович'},
+{id: 5, title: 'Официальный представитель в москве',text:'ООО “Примерение” ОГРН 1197746681384 ИНН 9702010260 +7927 606 55 81 +7903 729 95 49'},
+]
 
 
 
