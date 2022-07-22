@@ -6,7 +6,6 @@ import LinkMenu from "../../atoms/Link/Link";
 import Logo from "./logo.svg"
 import Button from "../../atoms/Button/Button";
 import close from "./imgs/menu_burger.svg"
-
 const Header = () => {
     const [isMobileMenuVisible, setIsMobileMenuVisible] = useState(false)
     return (
@@ -17,7 +16,7 @@ const Header = () => {
                     <div className="mobileMenuBurger__item"></div>
                     <div className="mobileMenuBurger__item"></div>
                 </div>
-                <img className="header__logo" src={Logo} alt=""/>
+                <Link to="/" style={{display:'contents'}}><img className="header__logo" src={Logo} alt=""/></Link>
                 <div className="content">
                     <div className="contacts">
                         <Link className="contacts__phone" to="84999994499" type="tel"><p>+7 499 999 44 99</p></Link>

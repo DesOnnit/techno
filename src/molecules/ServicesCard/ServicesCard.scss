@@ -5,6 +5,9 @@ $bg_color:#F8F8F8;
     position: relative;
     overflow: hidden;
     border-radius: 4px;
+    &:hover{
+        filter: drop-shadow(2px 2px 30px rgba(45, 46, 67, 0.25));
+    }
     &:last-child {
         grid-column: span 2;
         h4{

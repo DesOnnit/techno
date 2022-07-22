@@ -10,11 +10,13 @@ import Investments from "./pages/Investments/Investments";
 import AboutUs from "./pages/aboutUs/aboutUs";
 import Contacts from './pages/Contacts/Contacts';
 import Partners from './pages/Partners/Partners';
-
-
+import { Provider } from 'react-redux';
+import {store} from './store'
+import Invest from './molecules/invest/invest';
 function App() {
   return (
           <div className="App">
+            <Provider store={store}>
               <Header/>
               <Routes>
                   <Route path="/" element={<Main />}></Route>
@@ -27,6 +29,8 @@ function App() {
                   <Route path="/contacts" element={<Contacts/>}></Route>
               </Routes>
               <Footer/>
+              <Invest/>
+              </Provider>
           </div>
   );
 }
