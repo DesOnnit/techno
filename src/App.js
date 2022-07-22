@@ -7,6 +7,7 @@ import Services from './organisms/Services/Services';
 import Projects from './organisms/Projects/Projects';
 import Clients from './pages/Clients/Clients';
 import Investments from "./pages/Investments/Investments";
+import AboutUs from "./pages/aboutUs/aboutUs";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
                   <Route path="/projects" element={<Projects cub={true} page={12} />}></Route>
                   <Route path="/clients" element={<Clients/>}></Route>
                   <Route path="/investments" element={<Investments/>}></Route>
+                  <Route path="/aboutUs" element={<AboutUs/>}></Route>
               </Routes>
               <Footer/>
           </div>
