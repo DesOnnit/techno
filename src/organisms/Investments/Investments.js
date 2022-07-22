@@ -11,7 +11,7 @@ export default function Investments() {
                 <p className='investments__text'>{investments.text}</p>
                 <div className='investments__buttons'>
                     <Button name='Инвестировать в проект'/>
-                    <Button name='Подробнее' another_button={true}/>
+                    <Button name='Подробнее' btnType={"white"}/>
                 </div>
                 <img className='investments__img' alt='Техностиль' src={img} />
             </div>

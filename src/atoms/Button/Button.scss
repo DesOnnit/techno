@@ -5,13 +5,15 @@
   color: #2D2E43;
   border-radius: 4px;
   border: none;
-}
-
-.another-button {
-  border: 1px solid #FFFFFF;
-  border-radius: 4px;
-  color: white;
-  background: none;
-  padding: 10px 20px;
-  text-transform: uppercase;
+  &_black{
+    background-color: inherit;
+    border: 1px solid #2D2E43;
+    color: #2D2E43;
+  }
+  &_white{
+    border: 1px solid #FFFFFF;
+    color: white;
+    background: none;
+    padding: 10px 20px;
+  }
 }

@@ -1,0 +1,83 @@
+.investmentCard{
+  margin-top: 50px;
+  &__title{
+    text-transform: uppercase;
+  }
+  &-content{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    &-container{
+      max-width: 630px;
+      &__text{
+        margin-top: 10px;
+      }
+      &-btns{
+        max-width: 350px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+      }
+    }
+    &-img{
+      object-fit: cover;
+    }
+  }
+  @media (min-width: 1280px) and (max-width: 1439px) {
+    &-content{
+      &-container{
+        max-width: 570px;
+      }
+      &-img{
+        max-width: 570px;
+      }
+    }
+  }
+  @media (min-width: 1024px) and (max-width: 1279px) {
+    &-content{
+      &-container{
+        max-width: 455px;
+      }
+      &-img{
+        max-width: 455px;
+      }
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    &-content{
+      margin-top: 20px;
+      &-container{
+        max-width: 350px;
+      }
+      &-img{
+        max-width: 268px;
+      }
+    }
+  }
+  @media (min-width: 560px) and (max-width: 767px) {
+    margin-top: 30px;
+    &-content{
+      margin-top: 20px;
+      &-container{
+        max-width: 313px;
+      }
+      &-img{
+        max-width: 192px;
+      }
+    }
+  }
+  @media (min-width: 320px) and (max-width: 559px) {
+    margin-top: 30px;
+    &-content{
+      margin-top: 10px;
+      display: block;
+      &-container{
+        max-width: 355px;
+      }
+      &-img{
+        margin-top: 10px;
+        max-width: 355px;
+      }
+    }
+  }
+}
