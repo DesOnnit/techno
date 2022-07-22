@@ -1,0 +1,227 @@
+.contacts-page {
+    max-width: 1290px;
+    margin: 150px auto 25px;
+
+    &__title {
+        line-height: 96px;
+        text-transform: uppercase;
+        color: #40E1EC;
+        margin-bottom: 30px;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 150px;
+    }
+
+    &__info {
+        max-width: 410px;
+    }
+
+    &__item {
+        margin-bottom: 30px;
+
+        &:nth-child(2) {
+            p {
+                max-width: 150px;
+            }
+        }
+
+        &:nth-child(4) {
+            p {
+                max-width: 100%;
+            }
+        }
+
+        h4 {
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        p {
+            max-width: 210px;
+        }
+    }
+
+    @media screen and (min-width:1280px) and (max-width:1440px) {
+        max-width: 1170px;
+
+        &__map {
+            width: 770px;
+            height: 596px;
+        }
+
+        &__info {
+            max-width: 370px;
+
+            p {
+                max-width: 189px;
+            }
+
+            h4 {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    @media screen and (min-width:1024px) and (max-width:1279px) {
+        margin: 100px auto 0;
+        max-width: 940px;
+
+        &__title {
+            line-height: 68px;
+            margin-bottom: 20px;
+        }
+
+        &__container {
+            margin-bottom: 100px;
+        }
+
+        &__map {
+            width: 620px;
+            height: 500px;
+            object-fit: cover;
+        }
+
+        &__info {
+            max-width: 300px;
+
+        }
+
+        &__item {
+            margin-bottom: 20px;
+
+            p {
+                max-width: 166px;
+            }
+
+            h4 {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    @media screen and (min-width:768px) and (max-width:1023px) {
+        margin: 100px auto 0;
+        max-width: 640px;
+
+        &__title {
+            line-height: 68px;
+            margin-bottom: 20px;
+        }
+
+        &__container {
+            margin-bottom: 100px;
+        }
+
+        &__map {
+            width: 320px;
+            height: 448px;
+            object-fit: cover;
+        }
+
+        &__info {
+            max-width: 300px;
+
+        }
+
+        &__item {
+            margin-bottom: 10px;
+
+            p {
+                max-width: 166px;
+            }
+
+            h4 {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    @media screen and (min-width:560px) and (max-width:767px) {
+        margin: 50px auto 0;
+        max-width: 525px;
+
+        &__title {
+            line-height: 55px;
+            margin-bottom: 10px;
+        }
+
+        &__container {
+            margin-bottom: 50px;
+        }
+
+        &__map {
+            width: 270px;
+            height: 448px;
+            object-fit: cover;
+        }
+
+        &__info {
+            max-width: 300px;
+
+        }
+
+        &__item {
+            margin-bottom: 15px;
+
+            &:nth-child(2) {
+                p {
+                    max-width: 130px;
+                }
+            }
+
+            p {
+                max-width: 147px;
+            }
+
+            h4 {
+                margin-bottom: 12px;
+            }
+        }
+    }
+
+    @media screen and (min-width:320px) and (max-width:559px) {
+        margin: 50px auto 0;
+        max-width: 335px;
+
+        &__title {
+            line-height: 55px;
+            margin-bottom: 10px;
+        }
+
+        &__container {
+            margin-bottom: 50px;
+            flex-direction: column;
+        }
+
+        &__map {
+            width: 335px;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        &__info {
+            max-width: 300px;
+        }
+
+        &__item {
+            margin-bottom: 15px;
+
+            &:nth-child(2) {
+                p {
+                    max-width: 130px;
+                }
+            }
+
+            p {
+                max-width: 147px;
+            }
+
+            h4 {
+                margin-bottom: 12px;
+            }
+        }
+    }
+}
