@@ -82,6 +82,10 @@
       opacity: 0;
       pointer-events: none;
     }
+    &-noValue{
+      opacity: 0;
+      pointer-events: none;
+    }
     .mobileMenu{
       max-width: 400px;
       padding: 50px;

@@ -17,7 +17,7 @@ const Header = () => {
     return (
         <div className="header-container">
             <div className="header">
-                <div className="mobileMenuBurger" onClick={() => setIsMobileMenuVisible(true)}>
+                <div className="mobileMenuBurger" onClick={() => setIsMobileMenuVisible("opened")}>
                     <div className="mobileMenuBurger__item"></div>
                     <div className="mobileMenuBurger__item"></div>
                     <div className="mobileMenuBurger__item"></div>
@@ -42,10 +42,10 @@ const Header = () => {
                 </div>
 
             </div>
-            <div className={isMobileMenuVisible ? "mobileMenu-container mobileMenu-container-opened" : "mobileMenu-container mobileMenu-container-closed"} onClick={() => setIsMobileMenuVisible(false)}>
-                <div className={isMobileMenuVisible ? "mobileMenu mobileMenu-opened" : "mobileMenu mobileMenu-closed"} onClick={(e) => e.stopPropagation()}>
-                    <img src={close} alt="" onClick={() => setIsMobileMenuVisible(false)}
-                        className="mobileMenu__close" />
+            <div className={"mobileMenu-container mobileMenu-container-"+isMobileMenuVisible} onClick={() => setIsMobileMenuVisible("closed")}>
+                <div className={"mobileMenu mobileMenu-"+isMobileMenuVisible} onClick={(e)=>e.stopPropagation()}>
+                    <img src={close} alt="" onClick={() => setIsMobileMenuVisible("closed")}
+                         className="mobileMenu__close"/>
                     <div className="mobileMenu-navbar">
                         <div className="mobileMenu-navbar__links">
                             {links.map((link) =>
