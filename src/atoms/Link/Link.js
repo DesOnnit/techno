@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import './Link.scss';
 export default function LinkMenu(props) {
     function menuClose(){
+        window.scrollTo(0, 0);
         if(props.close){
             props.close();
         }
