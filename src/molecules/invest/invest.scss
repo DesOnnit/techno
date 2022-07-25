@@ -1,0 +1,123 @@
+.invest {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba($color: #000000, $alpha: 0.8);
+
+    &__content {
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 700px;
+        height: 850px;
+        position: relative;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 420px;
+
+        h2 {
+            font-size: 45px !important;
+            line-height: 61px;
+            max-width: 400px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+
+    &__inputs {
+        width: 100%;
+        height: 280px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__close {
+        position: absolute;
+        top: 60px;
+        right: 60px;
+        cursor: pointer;
+    }
+
+    &__submit {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 30px;
+        width: 100%;
+
+        button {
+            width: 220px;
+            height: 36px;
+        }
+    }
+
+    &__span {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 14px;
+        color: #7A7979;
+        max-width: 180px;
+    }
+
+    &__disabled {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    @media screen and (min-width:320px) and (max-width:767px) {
+        &__content {
+            width: 370px;
+            height: 500px;
+        }
+
+        &__container {
+            width: 310px;
+
+            h2 {
+                font-size: 24px !important;
+                line-height: 33px;
+                max-width: 225px;
+            }
+        }
+
+        &__inputs {
+            height: 220px;
+            margin-top: 20px;
+        }
+
+        &__close {
+            top: 30px;
+            right: 30px;
+        }
+
+        &__submit {
+            margin-top: 30px;
+
+            button {
+                width: 140px;
+                height: 45px;
+            }
+        }
+
+        &__span {
+            font-size: 10px;
+            line-height: 12px;
+            max-width: 180px;
+        }
+    }
+}

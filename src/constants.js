@@ -60,7 +60,7 @@ export const links = [
     { id: 3, title: 'инновации', link: 'investments' },
     { id: 4, title: 'клиенты', link: 'clients' },
     { id: 5, title: 'партнеры', link: 'partners' },
-    { id: 6, title: 'о нас', link: '' },
+    { id: 6, title: 'о нас', link: 'aboutUs' },
     { id: 7, title: 'контакты', link: 'contacts' },
 ]
 export const contants_links = {
