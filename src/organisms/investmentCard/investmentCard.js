@@ -3,7 +3,6 @@ import Button from "../../atoms/Button/Button";
 import "./investmentCard.scss"
 import { useDispatch } from 'react-redux'
 const InvestmentCard = (props) => {
-    console.log(props)
     const dispatch = useDispatch()
     const open = () => dispatch({ type: 'invest_open' })
     return (

@@ -68,7 +68,7 @@ export default function Invest() {
                     </div>
                     <div className='invest__submit'>
                         <span className='invest__span'>Нажимая кнопку, Вы соглашаетесь с политикой конфиденциальности</span>
-                        <Button name="Инвестировать в проект" />
+                        <Button name="Инвестировать в проект" disabled={(Object.values(error).filter((elem) => elem === '').length === 2 && Object.values(values).length === 3)}form="true" />
                     </div>
                     <img src={close} alt='Закрыть' className='invest__close' onClick={() => dispatch({ type: 'invest_close' })} />
                 </div>

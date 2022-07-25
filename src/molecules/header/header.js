@@ -42,36 +42,17 @@ const Header = () => {
                 </div>
 
             </div>
-<<<<<<< HEAD
             <div className={"mobileMenu-container mobileMenu-container-"+isMobileMenuVisible} onClick={() => setIsMobileMenuVisible("closed")}>
                 <div className={"mobileMenu mobileMenu-"+isMobileMenuVisible} onClick={(e)=>e.stopPropagation()}>
                     <img src={close} alt="" onClick={() => setIsMobileMenuVisible("closed")}
                          className="mobileMenu__close"/>
-=======
-            <div className={isMobileMenuVisible ? "mobileMenu-container mobileMenu-container-opened" : "mobileMenu-container mobileMenu-container-closed"} onClick={() => setIsMobileMenuVisible(false)}>
-                <div className={isMobileMenuVisible ? "mobileMenu mobileMenu-opened" : "mobileMenu mobileMenu-closed"} onClick={(e) => e.stopPropagation()}>
-                    <img src={close} alt="" onClick={() => setIsMobileMenuVisible(false)}
-                        className="mobileMenu__close" />
->>>>>>> 81e9c3f555bebd4278137eb48b4d566f1a504b02
                     <div className="mobileMenu-navbar">
                         <div className="mobileMenu-navbar__links">
                             {links.map((link) =>
                                 <div className="mobileMenu-navbar__links_item" key={link.id}>
-                                    <LinkMenu item={link} active={true}/>
+                                    <LinkMenu item={link}active={true} close={()=>setIsMobileMenuVisible(false)} />
                                 </div>
                             )}
-<<<<<<< HEAD
-                        </div>
-                        <div className="mobileMenu-contacts">
-                            <a className="mobileMenu-contacts-phone" href="tel:+74999994499" type="tel">
-                                <p className="mobileMenu-contacts-phone__description">+7 499 999 44 99</p>
-                            </a>
-                            <p className="mobileMenu-contacts__address">г.Самара, 2-й Безымянный переулок, дом 4а</p>
-                            <p className="mobileMenu-contacts__email">info@techostil.ru</p>
-                        </div>
-                        <Button name={"ЗАКАЗАТЬ ЗВОНОК"}/>
-=======
->>>>>>> 81e9c3f555bebd4278137eb48b4d566f1a504b02
                     </div>
                     <div className="mobileMenu-contacts">
                         <a className="mobileMenu-contacts-phone" href="tel:+74999994499" type="tel">
