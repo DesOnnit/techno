@@ -8,14 +8,19 @@ import Button from "../../atoms/Button/Button";
 import close from "./imgs/menu_burger.svg"
 
 const Header = () => {
-    const [isMobileMenuVisible, setIsMobileMenuVisible] = useState(false)
+    const [isMobileMenuVisible, setIsMobileMenuVisible] = useState("noValue") // values: "opened, closed, noValue"
     useEffect(()=>{
-        isMobileMenuVisible?document.body.style.overflow = 'hidden' : document.body.style.overflow = 'visible'
-    }, [isMobileMenuVisible])
+        isMobileMenuVisible==="opened"?document.body.style.overflow = 'hidden' : document.body.style.overflow = 'visible'
+    }, [isMobileMenuVisible]);
+
+    useEffect(()=>{
+       isolatorFunc("aba")
+    },[])
+
     return (
         <div className="header-container">
             <div className="header">
-                <div className="mobileMenuBurger" onClick={() => setIsMobileMenuVisible(true)}>
+                <div className="mobileMenuBurger" onClick={() => setIsMobileMenuVisible("opened")}>
                     <div className="mobileMenuBurger__item"></div>
                     <div className="mobileMenuBurger__item"></div>
                     <div className="mobileMenuBurger__item"></div>
@@ -40,21 +45,22 @@ const Header = () => {
                 </div>
 
             </div>
-            <div className={isMobileMenuVisible ? "mobileMenu-container mobileMenu-container-opened" : "mobileMenu-container mobileMenu-container-closed"} onClick={() => setIsMobileMenuVisible(false)}>
-                <div className={isMobileMenuVisible ? "mobileMenu mobileMenu-opened" : "mobileMenu mobileMenu-closed"} onClick={(e)=>e.stopPropagation()}>
-                    <img src={close} alt="" onClick={() => setIsMobileMenuVisible(false)}
+            <div className={"mobileMenu-container mobileMenu-container-"+isMobileMenuVisible} onClick={() => setIsMobileMenuVisible("closed")}>
+                <div className={"mobileMenu mobileMenu-"+isMobileMenuVisible} onClick={(e)=>e.stopPropagation()}>
+                    <img src={close} alt="" onClick={() => setIsMobileMenuVisible("closed")}
                          className="mobileMenu__close"/>
                     <div className="mobileMenu-navbar">
                         <div className="mobileMenu-navbar__links">
                             {links.map((link) =>
                                 <div className="mobileMenu-navbar__links_item" key={link.id}>
-                                    <LinkMenu item={link}/>
+                                    <LinkMenu item={link} active={true}/>
                                 </div>
                             )}
                         </div>
                         <div className="mobileMenu-contacts">
-                            <a className="mobileMenu-contacts-phone" href="tel:+74999994499" type="tel"><p
-                                className="mobileMenu-contacts-phone__description">+7 499 999 44 99</p></a>
+                            <a className="mobileMenu-contacts-phone" href="tel:+74999994499" type="tel">
+                                <p className="mobileMenu-contacts-phone__description">+7 499 999 44 99</p>
+                            </a>
                             <p className="mobileMenu-contacts__address">г.Самара, 2-й Безымянный переулок, дом 4а</p>
                             <p className="mobileMenu-contacts__email">info@techostil.ru</p>
                         </div>
