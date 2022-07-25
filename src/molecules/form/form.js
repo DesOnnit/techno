@@ -72,7 +72,7 @@ export default function Form() {
                     </label>
                     <div className="form__buttons">
                         <span className="form__span">Нажимая кнопку “Отправить”, Вы соглашаетесь с политикой конфиденциальности</span>
-                        <Button name="Отправить" />
+                        <Button name="Отправить" disabled={(Object.values(error).filter((elem) => elem === '').length === 2 && Object.values(values).length === 3)} form="true" />
                     </div>
                 </div>
             </div>
