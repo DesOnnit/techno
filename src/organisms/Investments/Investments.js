@@ -1,5 +1,5 @@
 import { investments } from '../../constants'
-import img from './imgs/img.svg'
+import img from './imgs/img.png'
 import './Investments.scss'
 import Button from '../../atoms/Button/Button'
 import { Link } from "react-router-dom";
