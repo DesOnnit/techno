@@ -70,6 +70,7 @@
 
   }
   .mobileMenu-container{
+    z-index: 5;
     top: 0;
     right: 0;
     left: 0;
@@ -77,26 +78,20 @@
     position: absolute;
     background: rgba(0,0,0,0.5);
     &-closed{
+      animation: mobileMenuContainerAnimationClose 0.5s ease;
       opacity: 0;
       pointer-events: none;
-      .mobileMenu {
-        max-width: 400px;
-        padding: 50px;
-        top: 0;
-        background-color: #2D2E43;
-        &-closed {
-          animation: mobileMenuAnimationClose 0.5s ease;
-        }
-      }
     }
     .mobileMenu{
-      animation: mobileMenuAnimationOpen 0.5s ease;
       max-width: 400px;
       padding: 50px;
       top: 0;
       background-color: #2D2E43;
       &-closed{
         animation: mobileMenuAnimationClose 0.5s ease;
+      }
+      &-opened{
+        animation: mobileMenuAnimationOpen 0.5s ease;
       }
       &__close{
         top: 35px;
@@ -113,8 +108,8 @@
         }
       }
       &-contacts{
-        margin-bottom: 10px;
-        margin-top: 5px;
+        margin-bottom: 20px;
+        margin-top: 20px;
         display: flex;
         flex-direction: column;
         &-phone{
@@ -158,6 +153,14 @@
     100%{
       opacity: 0;
       transform: translate(-100%);
+    }
+  }
+  @keyframes mobileMenuContainerAnimationClose {
+    0%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0;
     }
   }
   @media (min-width: 1440px) and (max-width: 1560px){
@@ -233,11 +236,20 @@
       .mobileMenuBurger{
         display: flex;
       }
+
       &__logo{
         max-width: 200px;
       }
       .content{
         display: none;
+      }
+    }
+    .mobileMenu-container{
+      .mobileMenu{
+        max-width: 370px;
+        &__close{
+          left: 325px;
+        }
       }
     }
   }
