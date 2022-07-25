@@ -1,8 +1,6 @@
 import React from 'react';
 import "./Investments.scss"
 import cube from "./imgs/Rectangle 25.svg"
-import preview from "./imgs/Rectangle 72.png"
-import Button from "../../atoms/Button/Button";
 import {investment_cards} from "../../constants";
 import InvestmentCard from "../../organisms/investmentCard/investmentCard";
 
@@ -22,7 +20,7 @@ const Investments = () => {
                 </div>
             </div>
             {investment_cards.map(card =>
-                <InvestmentCard title={card.title} content={card.content} img={card.img}/>
+                <InvestmentCard card={card} key={card.id}/>
             )}
         </div>
     );
