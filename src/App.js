@@ -13,6 +13,7 @@ import Partners from './pages/Partners/Partners';
 import { Provider } from 'react-redux';
 import {store} from './store'
 import Invest from './molecules/invest/invest';
+import Call from './molecules/call/call';
 function App() {
   return (
           <div className="App">
@@ -30,6 +31,7 @@ function App() {
               </Routes>
               <Footer/>
               <Invest/>
+              <Call/>
               </Provider>
           </div>
   );
