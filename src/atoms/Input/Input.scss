@@ -6,9 +6,25 @@
     width: 100%;
     margin-top: 10px;
     padding-left: 10px;
-    outline:none;
+    outline: none;
+
     &__label {
         margin-bottom: 15px;
         display: block;
+        position: relative;
+    }
+
+    &__error {
+        position: absolute;
+        color: red;
+        display: block;
+        bottom: -18px;
+    }
+
+    @media screen and (min-width:320px) and (max-width:767px) {
+        &__error {
+            bottom: -17px;
+            font-size: 14px;
+        }
     }
 }

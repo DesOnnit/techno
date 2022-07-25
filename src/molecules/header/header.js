@@ -6,8 +6,11 @@ import LinkMenu from "../../atoms/Link/Link";
 import Logo from "./logo.svg"
 import Button from "../../atoms/Button/Button";
 import close from "./imgs/menu_burger.svg"
+import { useDispatch } from 'react-redux'
 const Header = () => {
     const [isMobileMenuVisible, setIsMobileMenuVisible] = useState(false)
+    const dispatch = useDispatch()
+    const open = () => dispatch({ type: 'call_open' })
     return (
         <div className="header-container">
             <div className="header">
@@ -31,7 +34,7 @@ const Header = () => {
                                 </div>
                             )}
                         </div>
-                        <Button name={"ЗАКАЗАТЬ ЗВОНОК"}/>
+                        <Button click={open} name={"ЗАКАЗАТЬ ЗВОНОК"}/>
                     </div>
                 </div>
 
@@ -52,7 +55,7 @@ const Header = () => {
                                     <p className="mobileMenu-contacts__address">г.Самара, 2-й Безымянный переулок, дом 4а</p>
                                     <p className="mobileMenu-contacts__email">info@techostil.ru</p>
                                 </div>
-                                <Button name={"ЗАКАЗАТЬ ЗВОНОК"}/>
+                                <Button name={"ЗАКАЗАТЬ ЗВОНОК"}  click={open}/>
                             </div>
                         </div>
                     </div>
