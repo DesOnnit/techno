@@ -50,7 +50,7 @@ const Header = () => {
                         <div className="mobileMenu-navbar__links">
                             {links.map((link) =>
                                 <div className="mobileMenu-navbar__links_item" key={link.id}>
-                                    <LinkMenu item={link}/>
+                                    <LinkMenu item={link}active={true} close={()=>setIsMobileMenuVisible(false)} />
                                 </div>
                             )}
                     </div>
