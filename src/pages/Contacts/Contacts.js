@@ -12,6 +12,9 @@ export default function Contacts() {
                         <div className="contacts-page__item" key={item.id}>
                             <h4>{item.title}</h4>
                             <p>{item.text}</p>
+                            <p>{item.text_adress}</p>
+                            <p>{item.text_adress_dop}</p>
+                            <span>{item.text_dop}</span>
                         </div>
                     ))}
                 </div>

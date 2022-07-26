@@ -21,7 +21,6 @@
 
     &__item {
         margin-bottom: 30px;
-
         &:nth-child(2) {
             p {
                 max-width: 150px;
@@ -33,30 +32,45 @@
                 max-width: 100%;
             }
         }
-
+        &:last-child {
+            margin-bottom: 0;
+        }
         h4 {
             text-transform: uppercase;
             margin-bottom: 15px;
         }
 
         p {
-            max-width: 210px;
+            max-width: 240px;
+            font-weight: 300 !important;
+        }
+
+        span {
+            display: block;
+            font-family: 'Roboto';
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            max-width: 166px;
+            margin-top: 5px;
         }
     }
-
+    &__map {
+        object-fit: cover;
+    }
     @media screen and (min-width:1280px) and (max-width:1440px) {
         max-width: 1170px;
 
         &__map {
             width: 770px;
-            height: 596px;
+            height: auto;
         }
 
         &__info {
             max-width: 370px;
 
             p {
-                max-width: 189px;
+                max-width: 220px;
             }
 
             h4 {
@@ -80,7 +94,7 @@
 
         &__map {
             width: 620px;
-            height: 500px;
+            height: auto;
             object-fit: cover;
         }
 
@@ -93,11 +107,16 @@
             margin-bottom: 20px;
 
             p {
-                max-width: 166px;
+                max-width: 190px;
             }
 
             h4 {
                 margin-bottom: 10px;
+            }
+            span {
+                font-size: 12px;
+                line-height: 14px;
+                max-width: 120px;
             }
         }
     }
@@ -117,7 +136,7 @@
 
         &__map {
             width: 320px;
-            height: 448px;
+            height: auto;
             object-fit: cover;
         }
 
@@ -130,11 +149,16 @@
             margin-bottom: 10px;
 
             p {
-                max-width: 166px;
+                max-width: 190px;
             }
 
             h4 {
                 margin-bottom: 10px;
+            }
+            span {
+                font-size: 12px;
+                line-height: 14px;
+                max-width: 120px;
             }
         }
     }
@@ -154,7 +178,7 @@
 
         &__map {
             width: 270px;
-            height: 448px;
+            height: auto;
             object-fit: cover;
         }
 
@@ -173,12 +197,17 @@
             }
 
             p {
-                max-width: 147px;
+                max-width: 170px;
             }
 
             h4 {
                 margin-bottom: 12px;
             }
+        }
+        span {
+            font-size: 12px;
+            line-height: 14px;
+            max-width: 120px;
         }
     }
 
@@ -216,12 +245,21 @@
             }
 
             p {
-                max-width: 147px;
+                max-width: 170px;
             }
 
             h4 {
                 margin-bottom: 12px;
             }
+            span {
+                font-size: 12px;
+                line-height: 14px;
+                max-width: 120px;
+            }
+            &:last-child{
+                margin-bottom: 20px;
+            }
         }
+        
     }
 }
