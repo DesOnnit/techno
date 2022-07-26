@@ -8,11 +8,11 @@ import Button from "../../atoms/Button/Button";
 import close from "./imgs/menu_burger.svg"
 import { useDispatch } from 'react-redux'
 const Header = () => {
-    const [isMobileMenuVisible, setIsMobileMenuVisible] = useState(false)
+    const [isMobileMenuVisible, setIsMobileMenuVisible] = useState("noValue")
     const dispatch = useDispatch()
     const open = () => dispatch({ type: 'call_open' })
     useEffect(() => {
-        isMobileMenuVisible ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'visible'
+        isMobileMenuVisible==="opened" ? document.body.style.overflow = 'hidden' : document.body.style.overflow = 'visible'
     }, [isMobileMenuVisible])
     return (
         <div className="header-container">
@@ -50,7 +50,7 @@ const Header = () => {
                         <div className="mobileMenu-navbar__links">
                             {links.map((link) =>
                                 <div className="mobileMenu-navbar__links_item" key={link.id}>
-                                    <LinkMenu item={link}active={true} close={()=>setIsMobileMenuVisible(false)} />
+                                    <LinkMenu item={link} active={true} close={()=>setIsMobileMenuVisible("closed")} />
                                 </div>
                             )}
                     </div>
