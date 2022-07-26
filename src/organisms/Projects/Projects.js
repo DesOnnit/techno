@@ -25,7 +25,7 @@ export default function Projects(props) {
                     ))}
                 </div>
                 {!props.page
-                    ? <Link to='projects' className='projects__link'>
+                    ? <Link to='projects' className='projects__link' onClick={()=>window.scrollTo(0.0)}>
                         <p>Все проекты</p>
                         <span className='projects__link_arrow'></span>
                     </Link>
