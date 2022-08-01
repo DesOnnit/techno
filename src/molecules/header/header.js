@@ -25,7 +25,7 @@ const Header = () => {
                 <Link to="/" style={{ display: 'contents' }}><img className="header__logo" src={Logo} alt="" /></Link>
                 <div className="content">
                     <div className="contacts">
-                        <Link className="contacts__phone" to="84999994499" type="tel"><p>+7 499 999 44 99</p></Link>
+                        <a className="contacts__phone" href="tel:84999994499"><p>+7 499 999 44 99</p></a>
                         <p className="contacts__address">г.Самара, 2-й Безымянный переулок, дом 4а</p>
                     </div>
                     <div className="content__line"></div>

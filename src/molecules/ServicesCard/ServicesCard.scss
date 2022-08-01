@@ -15,6 +15,11 @@ $bg_color:#F8F8F8;
         }
     }
 
+    &__link{
+        text-decoration: none;
+        color: black;
+    }
+
     &__title {
         position: absolute;
         top: 20px;

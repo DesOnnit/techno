@@ -12,7 +12,7 @@ export default function Partners() {
             </div>
             <h3>Лизинг</h3>
             <h4>ООО «ЭкономЛизинг» в г. Воронеж</h4>
-            <p>www.economleasing.ru</p>
+            <a className="partners__link" target="_blank" href="http://www.economleasing.ru"><p>www.economleasing.ru</p></a>
             <p className='partners__info'>Лизинг оборудования позволяет компании в короткий срок увеличить эффективность своего производства, снизить его издержки и тем самым повысить свою конкурентоспособность.</p>
             <p>Условия приобретения оборудования в лизинг:</p>
             <ul>

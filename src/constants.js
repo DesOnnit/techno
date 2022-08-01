@@ -52,6 +52,36 @@ import investment4 from "./imgs/investment4.png"
 import investment5 from "./imgs/investment5.png"
 import investment6 from "./imgs/investment6.png"
 import investment7 from "./imgs/investment7.png"
+//картинки услуги "Емкостное оборудование"
+import CapacitiveEquipmentImg0 from "./molecules/servicesContainer/CapacitiveEquipment/imgs/1.png"
+import CapacitiveEquipmentImg1 from "./molecules/servicesContainer/CapacitiveEquipment/imgs/2.png"
+import CapacitiveEquipmentImg2 from "./molecules/servicesContainer/CapacitiveEquipment/imgs/3.png"
+import CapacitiveEquipmentImg3 from "./molecules/servicesContainer/CapacitiveEquipment/imgs/4.png"
+import CapacitiveEquipmentImg4 from "./molecules/servicesContainer/CapacitiveEquipment/imgs/5.png"
+import CapacitiveEquipmentImg5 from "./molecules/servicesContainer/CapacitiveEquipment/imgs/6.png"
+import CapacitiveEquipmentImg6 from "./molecules/servicesContainer/CapacitiveEquipment/imgs/7.png"
+import CapacitiveEquipmentImg7 from "./molecules/servicesContainer/CapacitiveEquipment/imgs/8.png"
+import CapacitiveEquipmentImg8 from "./molecules/servicesContainer/CapacitiveEquipment/imgs/9.png"
+import CapacitiveEquipmentImg9 from "./molecules/servicesContainer/CapacitiveEquipment/imgs/10.png"
+import CapacitiveEquipmentImg10 from "./molecules/servicesContainer/CapacitiveEquipment/imgs/11.png"
+import CapacitiveEquipmentImg11 from "./molecules/servicesContainer/CapacitiveEquipment/imgs/12.png"
+import CapacitiveEquipmentImg12 from "./molecules/servicesContainer/CapacitiveEquipment/imgs/13.png"
+import CapacitiveEquipmentImg13 from "./molecules/servicesContainer/CapacitiveEquipment/imgs/14.png"
+import CapacitiveEquipmentImg14 from "./molecules/servicesContainer/CapacitiveEquipment/imgs/15.png"
+//компоненты услуг
+import ProcessPipelines from "./molecules/servicesContainer/ProcessPipelines/ProcessPipelines";
+import ClusterChrome from "./molecules/servicesContainer/ClusterChrome/ClusterChrome";
+import CapacitiveEquipment from "./molecules/servicesContainer/CapacitiveEquipment/CapacitiveEquipment";
+import WastewaterTreatment from "./molecules/servicesContainer/WastewaterTreatment/WastewaterTreatment";
+import ControlSystems from "./molecules/servicesContainer/ControlSystems/ControlSystems";
+import MetalWorking from "./molecules/servicesContainer/MetalWorking/MetalWorking";
+import EngineeringWork from "./molecules/servicesContainer/EngineeringWork/EngineeringWork";
+import ThermalInsulation from "./molecules/servicesContainer/ThermalInsulation/ThermalInsulation";
+import AirDucts from "./molecules/servicesContainer/AirDucts/AirDucts";
+import TechnologicalEquipment from "./molecules/servicesContainer/TechnologicalEquipment/TechnologicalEquipment";
+import MetalStructures from "./molecules/servicesContainer/MetalStructures/MetalStructures";
+import LoadingSystems from "./molecules/servicesContainer/LoadingSystems/LoadingSystems";
+import Accessories from "./molecules/servicesContainer/Accessories/Accessories";
 
 
 export const links = [
@@ -129,19 +159,19 @@ export const benefits = [
     { id: 6, title: 'КОМПЛЕКСНАЯ ПОСТАВКА ОБОРУДОВАНИЯ' },
 ]
 export const services_cards = [
-    { id: 1, title: 'Проектные и конструкторские работы',src:services_card1},
-    { id: 2, title: 'Технологические трубопроводы',src:services_card2},
-    { id: 3, title: 'Теплоизоляция',src:services_card3},
-    { id: 4, title: 'Воздуховоды',src:services_card4},
-    { id: 5, title: 'Емкостное оборудование',src:services_card5},
-    { id: 6, title: 'Технологическое оборудование Энергетическое оборудование',src:services_card6},
-    { id: 7, title: 'Металлоконструкции',src:services_card7},
-    { id: 8, title: 'Системы управления',src:services_card8},
-    { id: 9, title: 'Металлообработка',src:services_card9},
-    { id: 10, title: 'Системы погрузки и разгрузки вагонов',src:services_card10},
-    { id: 11, title: 'Комплектующие',src:services_card11},
-    { id: 12, title: 'Кластерное хромирование',src:services_card12},
-    { id: 13, title: 'Очистные сооружения',src:services_card13},
+    { id: 1, title: 'Проектные и конструкторские работы',src:services_card1, link: "/servicePage/1"},
+    { id: 2, title: 'Технологические трубопроводы',src:services_card2, link: "/servicePage/2"},
+    { id: 3, title: 'Теплоизоляция',src:services_card3, link: "/servicePage/3"},
+    { id: 4, title: 'Воздуховоды',src:services_card4, link: "/servicePage/4"},
+    { id: 5, title: 'Емкостное оборудование',src:services_card5, link: "/servicePage/5"},
+    { id: 6, title: 'Технологическое оборудование Энергетическое оборудование',src:services_card6, link: "/servicePage/6"},
+    { id: 7, title: 'Металлоконструкции',src:services_card7, link: "/servicePage/7"},
+    { id: 8, title: 'Системы управления',src:services_card8, link: "/servicePage/8"},
+    { id: 9, title: 'Металлообработка',src:services_card9, link: "/servicePage/9"},
+    { id: 10, title: 'Системы погрузки и разгрузки вагонов',src:services_card10, link: "/servicePage/10"},
+    { id: 11, title: 'Комплектующие',src:services_card11, link: "/servicePage/11"},
+    { id: 12, title: 'Кластерное хромирование',src:services_card12, link: "/servicePage/12"},
+    { id: 13, title: 'Очистные сооружения',src:services_card13, link: "/servicePage/13"},
 ]
 export const directive_cards = [
     { id: 1, title: 'машиностроение',src:directive_card1},
@@ -271,6 +301,56 @@ export const contacts = [
 {id: 3, title: 'Почта',text:'info@texnostyle.ru'},
 {id: 4, title: 'Генеральный директор',text:'Вертецкий Вячеслав Александрович'},
 {id: 5, title: 'Официальный представитель в москве',text:'ООО “Примерение”',text_dop:'ОГРН 1197746681384 ИНН 9702010260 +7927 606 55 81 +7903 729 95 49'},
+]
+
+export const services_menu = [
+    { id: 1, title: 'Проектные и конструкторские работы',link: `/servicePage/1`,},
+    { id: 2, title: 'Технологические трубопроводы',link: `/servicePage/2`,},
+    { id: 3, title: 'Теплоизоляция',link: `/servicePage/3`,},
+    { id: 4, title: 'Воздуховоды',link: `/servicePage/4`,},
+    { id: 5, title: 'Емкостное оборудование',link: `/servicePage/5`,},
+    { id: 6, title: 'Технологическое оборудование Энергетическое оборудование',link: `/servicePage/6`,},
+    { id: 7, title: 'Металлоконструкции',link: `/servicePage/7`,},
+    { id: 8, title: 'Системы управления',link: `/servicePage/8`,},
+    { id: 9, title: 'Металлообработка',link: `/servicePage/9`,},
+    { id: 10, title: 'Системы погрузки и разгрузки вагонов',link: `/servicePage/10`,},
+    { id: 11, title: 'Комплектующие',link: `/servicePage/11`,},
+    { id: 12, title: 'Кластерное хромирование',link: `/servicePage/12`,},
+    { id: 13, title: 'Очистные сооружения',link: `/servicePage/13`,},
+]
+
+ export const services_pages = [
+     {id: 1, component: <EngineeringWork/>},
+     {id: 2, component: <ProcessPipelines/>},
+     {id: 3, component: <ThermalInsulation/>},
+     {id: 4, component: <AirDucts/>},
+     {id: 5, component: <CapacitiveEquipment/>},
+     {id: 6, component: <TechnologicalEquipment/>},
+     {id: 7, component: <MetalStructures/>},
+     {id: 8, component: <ControlSystems/>},
+     {id: 9, component: <MetalWorking/>},
+     {id: 10, component: <LoadingSystems/>},
+     {id: 11, component: <Accessories/>},
+     {id: 12, component: <ClusterChrome/>},
+     {id: 13, component: <WastewaterTreatment/>},
+]
+
+export const capacitiveEquipmentImgs = [
+    CapacitiveEquipmentImg0,
+    CapacitiveEquipmentImg1,
+    CapacitiveEquipmentImg2,
+    CapacitiveEquipmentImg3,
+    CapacitiveEquipmentImg4,
+    CapacitiveEquipmentImg5,
+    CapacitiveEquipmentImg6,
+    CapacitiveEquipmentImg7,
+    CapacitiveEquipmentImg8,
+    CapacitiveEquipmentImg9,
+    CapacitiveEquipmentImg10,
+    CapacitiveEquipmentImg11,
+    CapacitiveEquipmentImg12,
+    CapacitiveEquipmentImg13,
+    CapacitiveEquipmentImg14,
 ]
 
 
