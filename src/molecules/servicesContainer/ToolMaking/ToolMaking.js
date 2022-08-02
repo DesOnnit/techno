@@ -4,7 +4,7 @@ import preview1 from "./imgs/preview1.png"
 import preview2 from "./imgs/preview2.png"
 import preview3 from "./imgs/preview3.png"
 import preview4 from "./imgs/preview4.png"
-import preview5 from "./imgs/preview5.png"
+import preview5 from "./imgs/preview5.jpg"
 import "./ToolMaking.scss"
 
 const ToolMaking = () => {

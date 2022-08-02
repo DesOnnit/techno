@@ -15,12 +15,12 @@ const SectionMainProduction = () => {
             <p className="SectionMainProduction__description">Группа компаний «Росэкспертиза» специализируется на инжиниринге и изготовление эксклюзивного оборудования для многих типов промышленности, включая атомную энергетику, нефтяную, судостроительною промышленности, а также машиностроение.</p>
             <p className="SectionMainProduction__description">Большое значение в деятельности «Росэкспертизы» составляет производство специализированных видов сталей и промышленные услуги. Производственные площадки предприятия расположены в Самаре, а также в Санкт-Петербурге, это позволяет взаимодействовать со всеми городами и регионами России, если это позволяет энергетическая мощность. Сотрудничество с НИИ, которые занимающимися обработкой сплавов и металлов позволяет внедрять инновационные технологии в производственный процесс и достигать наилучшего результата.</p>
             <div className="SectionMainProduction-photo">
-                <img src={factory1} alt="" className="SectionMainProduction-photo__item"/>
-                <img src={factory2} alt="" className="SectionMainProduction-photo__item"/>
-                <img src={factory3} alt="" className="SectionMainProduction-photo__item"/>
-                <img src={factory4} alt="" className="SectionMainProduction-photo__item"/>
-                <img src={factory5} alt="" className="SectionMainProduction-photo__item"/>
-                <img src={factory6} alt="" className="SectionMainProduction-photo__item"/>
+                <img src={factory1} alt="Оборудование" className="SectionMainProduction-photo__item"/>
+                <img src={factory2} alt="Оборудование" className="SectionMainProduction-photo__item"/>
+                <img src={factory3} alt="Оборудование" className="SectionMainProduction-photo__item"/>
+                <img src={factory4} alt="Оборудование" className="SectionMainProduction-photo__item"/>
+                <img src={factory5} alt="Оборудование" className="SectionMainProduction-photo__item"/>
+                <img src={factory6} alt="Оборудование" className="SectionMainProduction-photo__item"/>
             </div>
         </div>
     );

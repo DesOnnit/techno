@@ -10,7 +10,7 @@ import preview5 from "./imgs/preview5.jpg";
 const Accessories = () => {
     return (
         <div className="Accessories">
-            <img src={preview0} alt=""/>
+            <img src={preview0} alt="Оборудование"/>
             <p>Компания «Техностиль» осуществляет комплекс работ по комплектующим оборудования различных предприятий нефтехимии и энергетики</p>
             <ul>
                 <p>
@@ -48,12 +48,12 @@ const Accessories = () => {
             </ul>
             <h3>Примеры наших работ</h3>
             <div>
-                <img src={preview0} alt=""/>
-                <img src={preview1} alt=""/>
-                <img src={preview2} alt=""/>
-                <img src={preview3} alt=""/>
-                <img src={preview4} alt=""/>
-                <img src={preview5} alt=""/>
+                <img src={preview0} alt="Оборудование"/>
+                <img src={preview1} alt="Оборудование"/>
+                <img src={preview2} alt="Оборудование"/>
+                <img src={preview3} alt="Оборудование"/>
+                <img src={preview4} alt="Оборудование"/>
+                <img src={preview5} alt="Оборудование"/>
             </div>
         </div>
     );

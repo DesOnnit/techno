@@ -1,6 +1,29 @@
-import projects_card1 from './imgs/projects_card1.svg'
-import projects_card2 from './imgs/projects_card2.svg'
-import projects_card3 from './imgs/projects_card3.svg'
+//картинки проектов
+import projects_card1 from './imgs/projects_card1.avif'
+import projects_card2 from './imgs/projects_card2.avif'
+import projects_card3 from './imgs/projects_card3.avif'
+import projects_card4 from './imgs/projects_card4.png'
+import projects_card5 from './imgs/projects_card5.png'
+import projects_card6 from './imgs/projects_card6.png'
+import projects_card7 from './imgs/projects_card7.png'
+import projects_card8 from './imgs/projects_card8.png'
+import projects_card9 from './imgs/projects_card9.png'
+import projects_card10 from './imgs/projects_card10.png'
+import projects_card11 from './imgs/projects_card11.png'
+import projects_card12 from './imgs/projects_card12.png'
+import projects_card13 from './imgs/projects_card13.png'
+import projects_card14 from './imgs/projects_card14.png'
+import projects_card15 from './imgs/projects_card15.png'
+import projects_card16 from './imgs/projects_card16.png'
+import projects_card17 from './imgs/projects_card17.png'
+import projects_card18 from './imgs/projects_card18.png'
+import projects_card19 from './imgs/projects_card19.png'
+import projects_card20 from './imgs/projects_card20.png'
+import projects_card21 from './imgs/projects_card21.png'
+import projects_card22 from './imgs/projects_card22.png'
+import projects_card23 from './imgs/projects_card23.png'
+import projects_card24 from './imgs/projects_card24.png'
+import projects_card25 from './imgs/projects_card25.png'
 //картинки клиентов
 import client1 from './imgs/client1.svg'
 import client2 from './imgs/client2.svg'
@@ -48,7 +71,7 @@ import directive_card7 from './imgs/directive_card7.png'
 //картинки инвестиций
 import investment1 from "./imgs/investment1.avif"
 import investment2 from "./imgs/investment2.avif"
-import investment3 from "./imgs/investment3.png"
+import investment3 from "./imgs/investment3.avif"
 import investment4 from "./imgs/investment4.avif"
 import investment5 from "./imgs/investment5.avif"
 import investment6 from "./imgs/investment6.avif"
@@ -101,18 +124,31 @@ export const contants_links = {
     mail: 'info@techostil.ru'
 }
 export const projects_cards = [
-    { id: 1, title: 'Разработка и изготовление «Ёмкости Холодного Слива Е-7» для Узбекнефтегаза', src: projects_card1 },
-    { id: 2, title: 'Разработка и изготовление установки для переработки полиэтилена/пластика 1.5 т/ч для Израиля', src: projects_card2 },
-    { id: 3, title: 'Разработка и изготовление устройства для подготовки мазута в камеру сгорания на ТЭЦ', src: projects_card3 },
-    { id: 4, title: 'Разработка и изготовление устройства для подготовки мазута в камеру сгорания на ТЭЦ', src: projects_card3 },
-    { id: 5, title: 'Разработка и изготовление устройства для подготовки мазута в камеру сгорания на ТЭЦ', src: projects_card3 },
-    { id: 6, title: 'Разработка и изготовление устройства для подготовки мазута в камеру сгорания на ТЭЦ', src: projects_card3 },
-    { id: 7, title: 'Разработка и изготовление устройства для подготовки мазута в камеру сгорания на ТЭЦ', src: projects_card3 },
-    { id: 8, title: 'Разработка и изготовление устройства для подготовки мазута в камеру сгорания на ТЭЦ', src: projects_card3 },
-    { id: 9, title: 'Разработка и изготовление устройства для подготовки мазута в камеру сгорания на ТЭЦ', src: projects_card3 },
-    { id: 10, title: 'Разработка и изготовление устройства для подготовки мазута в камеру сгорания на ТЭЦ', src: projects_card3 },
-    { id:11, title: 'Разработка и изготовление устройства для подготовки мазута в камеру сгорания на ТЭЦ', src: projects_card3 },
-    { id: 12, title: 'Разработка и изготовление устройства для подготовки мазута в камеру сгорания на ТЭЦ', src: projects_card3 },
+    { id: 1, title: 'Проект', src: projects_card1 },
+    { id: 2, title: 'Проект', src: projects_card2 },
+    { id: 3, title: 'Проект', src: projects_card3 },
+    { id: 4, title: 'Коленчатые валы', src: projects_card4 },
+    { id: 5, title: 'Колесо', src: projects_card5 },
+    { id: 6, title: 'Проект', src: projects_card6 },
+    { id: 7, title: 'Проект', src: projects_card7 },
+    { id: 8, title: 'Плита-балансир', src: projects_card8 },
+    { id: 9, title: 'Плита дробилки нижняя', src: projects_card9 },
+    { id: 10, title: 'Плита дробилки верхняя', src: projects_card10 },
+    { id:11, title: 'Проект', src: projects_card11 },
+    { id: 12, title: 'Проект', src: projects_card12 },
+    { id: 13, title: 'Гайки любых размеров', src: projects_card13 },
+    { id: 14, title: 'Кольцо', src: projects_card14 },
+    { id: 15, title: 'Проушина', src: projects_card15 },
+    { id: 16, title: 'Проект', src: projects_card16 },
+    { id: 17, title: 'Расточка на валу', src: projects_card17 },
+    { id: 18, title: 'Проект', src: projects_card18 },
+    { id: 19, title: 'Ремонт ротора', src: projects_card19 },
+    { id: 20, title: 'Шайбы', src: projects_card20 },
+    { id: 21, title: 'Вал-шестерня', src: projects_card21 },
+    { id: 22, title: 'Вал-шестерня (ремонт)', src: projects_card22 },
+    { id: 23, title: 'Валы-шестерни любой сложности', src: projects_card23 },
+    { id: 24, title: 'Внутренний и наружный зуб', src: projects_card24 },
+    { id: 25, title: 'Колесо-шестерня', src: projects_card25 },
 
 ]
 export const investments = {

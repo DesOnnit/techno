@@ -7,11 +7,11 @@ const SectionAdvantages = () => {
     return (
         <div className="SectionAdvantages-container">
             <div className="SectionAdvantages">
-                <img className="SectionAdvantages__mainImg" src={mainImg} alt=""/>
+                <img className="SectionAdvantages__mainImg" src={mainImg} alt="Процесс работы"/>
                 <div className="cubes">
-                    <img src={cube} alt="" className="cubes__item"/>
-                    <img src={cube} alt="" className="cubes__item"/>
-                    <img src={cube} alt="" className="cubes__item"/>
+                    <img src={cube} alt="Кубик ;)" className="cubes__item"/>
+                    <img src={cube} alt="Кубик ;)" className="cubes__item"/>
+                    <img src={cube} alt="Кубик ;)" className="cubes__item"/>
                 </div>
                 <div className="textBlock">
                     <div className="textBlock-advantages">

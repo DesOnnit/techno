@@ -7,7 +7,7 @@ const CapacitiveEquipment = () => {
     return (
         <div className="CapacitiveEquipment">
             <h3>Емкостное оборудование</h3>
-            <img src={preview0} alt=""/>
+            <img src={preview0} alt="Емкость"/>
             <p>ООО «Техностиль» осуществит изготовление емкостного оборудования из стали, применимые для нефтепродуктов и прочих жидкостей различного объема до 50 тысяч куб. м.</p>
             <h3>Емкостное технологическое оборудование:</h3>
             <ul>
@@ -44,7 +44,7 @@ const CapacitiveEquipment = () => {
             <h3>Завод по производству дисперсий:</h3>
             <div className="grid">
                 {capacitiveEquipmentImgs.map((img, index)=>
-                    <img className="grid__item" src={img} alt="" key={index}/>
+                    <img className="grid__item" src={img} alt="Емкостное оборудование" key={index}/>
                 )}
             </div>
             <h3>Резервуарное оборудование:</h3>

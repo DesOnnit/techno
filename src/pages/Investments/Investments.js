@@ -14,9 +14,9 @@ const Investments = () => {
                         технологии</h1>
                 </div>
                 <div className="investments-page-title-cubes">
-                    <img className="investments-page-title-cubes__item" src={cube} alt=""/>
-                    <img className="investments-page-title-cubes__item" src={cube} alt=""/>
-                    <img className="investments-page-title-cubes__item" src={cube} alt=""/>
+                    <img className="investments-page-title-cubes__item" src={cube} alt="кубик ;)"/>
+                    <img className="investments-page-title-cubes__item" src={cube} alt="кубик ;)"/>
+                    <img className="investments-page-title-cubes__item" src={cube} alt="кубик ;)"/>
                 </div>
             </div>
             {investment_cards.map(card =>

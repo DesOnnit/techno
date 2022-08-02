@@ -22,7 +22,7 @@ const Header = () => {
                     <div className="mobileMenuBurger__item"></div>
                     <div className="mobileMenuBurger__item"></div>
                 </div>
-                <Link to="/" style={{ display: 'contents' }}><img className="header__logo" src={Logo} alt="" /></Link>
+                <Link to="/" style={{ display: 'contents' }}><img className="header__logo" src={Logo} alt="Logo" /></Link>
                 <div className="content">
                     <div className="contacts">
                         <a className="contacts__phone" href="tel:84999994499"><p>+7 499 999 44 99</p></a>
@@ -44,7 +44,7 @@ const Header = () => {
             </div>
             <div className={"mobileMenu-container mobileMenu-container-"+isMobileMenuVisible} onClick={() => setIsMobileMenuVisible("closed")}>
                 <div className={"mobileMenu mobileMenu-"+isMobileMenuVisible} onClick={(e)=>e.stopPropagation()}>
-                    <img src={close} alt="" onClick={() => setIsMobileMenuVisible("closed")}
+                    <img src={close} alt="закрыть меню" onClick={() => setIsMobileMenuVisible("closed")}
                          className="mobileMenu__close"/>
                     <div className="mobileMenu-navbar">
                         <div className="mobileMenu-navbar__links">

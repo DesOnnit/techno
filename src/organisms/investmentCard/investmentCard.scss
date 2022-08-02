@@ -20,6 +20,8 @@
       }
     }
     &-img{
+      max-height: 800px;
+      max-width: 630px;
       object-fit: cover;
     }
   }

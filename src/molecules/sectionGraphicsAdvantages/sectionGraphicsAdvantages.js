@@ -1,6 +1,4 @@
 import React from 'react';
-import mainBig from "./imgs/main-big.png";
-import mainSmall from "./imgs/main-small.png"
 import "./sectionGraphicsAdvantages.scss"
 
 const SectionGraphicsAdvantages = () => {
@@ -30,7 +28,6 @@ const SectionGraphicsAdvantages = () => {
                     </div>
                 </div>
             </div>
-            {/*<img src={mainBig} alt="" className="SectionGraphicsAdvantages__main"/>*/}
         </div>
     );
 };

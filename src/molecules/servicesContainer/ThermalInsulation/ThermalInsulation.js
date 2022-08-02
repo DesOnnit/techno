@@ -8,7 +8,7 @@ const ThermalInsulation = () => {
     return (
         <div className="ThermalInsulation">
             <h3>Теплоизоляция</h3>
-            <img src={preview0} alt=""/>
+            <img src={preview0} alt="Теплоизоляция"/>
             <p>Теплоизоляция – это важнейшая часть в промышленных видах строительства, ведь правильно сделанная теплоизоляция серьезно повышает экономию энергии, что позволяет значительно экономить средства ввиду постоянно растущих тарифов на энергоносители.</p>
             <ul>
                 <p>
@@ -34,8 +34,8 @@ const ThermalInsulation = () => {
                 </p>
             </ul>
             <div>
-                <img src={preview1} alt=""/>
-                <img src={preview2} alt=""/>
+                <img src={preview1} alt="Теплоизоляция"/>
+                <img src={preview2} alt="Теплоизоляция"/>
             </div>
             <h4>Отделка наружной поверхности</h4>
             <ul>

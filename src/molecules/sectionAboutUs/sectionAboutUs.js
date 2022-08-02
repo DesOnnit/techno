@@ -14,12 +14,12 @@ const SectionAboutUs = () => {
             </div>
             <div className="previewBlock">
                 <div className="cubes">
-                    <img className="cubes__item" src={cube} alt=""/>
-                    <img className="cubes__item" src={cube} alt=""/>
-                    <img className="cubes__item" src={cube} alt=""/>
+                    <img className="cubes__item" src={cube} alt="Кубик ;)"/>
+                    <img className="cubes__item" src={cube} alt="Кубик ;)"/>
+                    <img className="cubes__item" src={cube} alt="Кубик ;)"/>
                 </div>
-                <img className="previewBlock__working" src={workingPreview} alt="" />
-                <img className="previewBlock__factory" src={factoryImg} alt="" />
+                <img className="previewBlock__working" src={workingPreview} alt="Процесс работы" />
+                <img className="previewBlock__factory" src={factoryImg} alt="Завод" />
             </div>
         </div>
     );

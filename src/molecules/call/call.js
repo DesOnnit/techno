@@ -10,7 +10,7 @@ export default function Call (){
         <div className={status ? 'call' : 'call call__disabled'}>
             <div className="call__content">
               <Form/>
-              <img src={close} className="call__close" onClick={() => dispatch({ type: 'call_close' })} />  
+              <img src={close} className="call__close" alt="Закрыть форму" onClick={() => dispatch({ type: 'call_close' })} />
             </div>
         </div>
     )

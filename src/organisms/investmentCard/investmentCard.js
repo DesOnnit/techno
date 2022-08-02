@@ -1,8 +1,8 @@
-import React from 'react';
+import React, {memo} from 'react';
 import Button from "../../atoms/Button/Button";
 import "./investmentCard.scss"
 import { useDispatch } from 'react-redux'
-const InvestmentCard = (props) => {
+const InvestmentCard = memo((props) => {
     const dispatch = useDispatch()
     const open = () => dispatch({ type: 'invest_open' })
     return (
@@ -20,10 +20,10 @@ const InvestmentCard = (props) => {
                         <Button name="Подробнее" btnType={"black"}/>
                     </div>
                 </div>
-                <img className="investmentCard-content-img" src={props.card.img} alt=""/>
+                <img className="investmentCard-content-img" src={props.card.img} alt="Фото карточки инвестиции"/>
             </div>
         </div>
     );
-};
+});
 
 export default InvestmentCard;

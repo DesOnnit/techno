@@ -9,9 +9,9 @@ const LoadingSystems = () => {
         <div className="LoadingSystems">
             <h3>Системы погрузки и разгрузки вагонов</h3>
             <div>
-                <img src={preview0} alt=""/>
-                <img src={preview1} alt=""/>
-                <img src={preview2} alt=""/>
+                <img src={preview0} alt="blueprint"/>
+                <img src={preview1} alt="blueprint"/>
+                <img src={preview2} alt="blueprint"/>
             </div>
             <h3>Состав системы разгрузки вагонов</h3>
             <ul>
