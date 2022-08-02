@@ -8,11 +8,21 @@ $bg_color:#F8F8F8;
     &:hover{
         filter: drop-shadow(2px 2px 30px rgba(45, 46, 67, 0.25));
     }
-    &:last-child {
+    &-big{
         grid-column: span 2;
         h4{
             max-width: 500px;
         }
+    }
+
+    &__link{
+        text-decoration: none;
+        color: black;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
     }
 
     &__title {

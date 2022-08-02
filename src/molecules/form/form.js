@@ -1,8 +1,10 @@
 import Input from '../../atoms/Input/Input'
 import Button from '../../atoms/Button/Button'
+import {useDispatch} from "react-redux";
 import './form.scss'
-import { useState } from 'react'
+import {useRef, useState} from 'react'
 export default function Form() {
+    const dispatch = useDispatch()
     const [values, setValue] = useState({})
     const [comment, setComment] = useState('')
     const [error, setError] = useState({})
@@ -53,8 +55,24 @@ export default function Form() {
             });
         }
     }
+    let orderForm = useRef(null);
+    let handleForm = async (e) => {
+        e.preventDefault();
+        let formData = new FormData(orderForm.current)
+        try {
+            dispatch({ type: 'call_close' })
+            const response = await fetch('/sendCallBack.php', {
+                method: 'POST',
+                body: formData
+            });
+            setValue({})
+            setComment("")
+        } catch (error) {
+            console.log(error);
+        }
+    }
     return (
-        <form className="form">
+        <form className="form" ref={orderForm} onSubmit={handleForm}>
             <div className="form__heder">
                 <h1 className="heder__title">связаться</h1>
                 <h1 className="heder__subtitle">с нами</h1>
@@ -68,11 +86,11 @@ export default function Form() {
                 <div className="form__connection">
                     <label>
                         <p>Комментарий</p>
-                        <textarea className="form__textarea" value={comment} onChange={(e) => setComment(e.target.value)} />
+                        <textarea className="form__textarea" name="comment" value={comment} onChange={(e) => setComment(e.target.value)} />
                     </label>
                     <div className="form__buttons">
                         <span className="form__span">Нажимая кнопку “Отправить”, Вы соглашаетесь с политикой конфиденциальности</span>
-                        <Button name="Отправить" disabled={(Object.values(error).filter((elem) => elem === '').length === 2 && Object.values(values).length === 3)} form="true" />
+                        <Button type="submit" name="Отправить" disabled={(Object.values(error).filter((elem) => elem === '').length === 2 && Object.values(values).length === 3)} form="true" />
                     </div>
                 </div>
             </div>

@@ -14,6 +14,7 @@ import { Provider } from 'react-redux';
 import {store} from './store'
 import Invest from './molecules/invest/invest';
 import Call from './molecules/call/call';
+import ServicePage from "./pages/ServicePage/ServicePage";
 function App() {
   return (
           <div className="App">
@@ -28,6 +29,7 @@ function App() {
                   <Route path="/aboutUs" element={<AboutUs/>}></Route>
                   <Route path="/partners" element={<Partners/>}></Route>
                   <Route path="/contacts" element={<Contacts/>}></Route>
+                  <Route path="/servicePage/:id" element={<ServicePage/>}></Route>
               </Routes>
               <Footer/>
               <Invest/>

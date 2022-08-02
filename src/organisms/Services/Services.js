@@ -1,8 +1,9 @@
 import './Services.scss'
-import { services_cards } from '../../constants'
+import { services_cards, } from '../../constants'
 import ServicesCard from '../../molecules/ServicesCard/ServicesCard'
 import img from './imgs/cub.svg'
 export default function Services(props) {
+
     return (
         <section className='services'>
             <div className='services__content'>
@@ -12,6 +13,7 @@ export default function Services(props) {
                         <ServicesCard
                             key={card.id}
                             card={card}
+                            link={card.link}
                         />
                     ))}
                 </div>

@@ -13,7 +13,7 @@ export default function Footer() {
                             <img className='footer__logo' src={logo} alt='Техностиль' />
                             <a className='footer__text' href={`tel:${contants_links.telephone}`}><p>{contants_links.telephone}</p></a>
                             <p className='footer__text'>{contants_links.adress}</p>
-                            <a className='footer__text' href={`tel:${contants_links.mail}`}><p>{contants_links.mail}</p></a>
+                            <a className='footer__text' href={`mailto:${contants_links.mail}`}><p>{contants_links.mail}</p></a>
                         </div>
                         <div className='footer__about_links'>
                             {links.map((item) => (
