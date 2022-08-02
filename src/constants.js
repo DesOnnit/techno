@@ -36,6 +36,7 @@ import services_card10 from './imgs/services-card10.png'
 import services_card11 from './imgs/services-card11.png'
 import services_card12 from './imgs/services-card12.png'
 import services_card13 from './imgs/services-card13.png'
+import services_card14 from './imgs/services-card14.png'
 //картинки направлений
 import directive_card1 from './imgs/directive_card1.png'
 import directive_card2 from './imgs/directive_card2.png'
@@ -45,13 +46,13 @@ import directive_card5 from './imgs/directive_card5.png'
 import directive_card6 from './imgs/directive_card6.png'
 import directive_card7 from './imgs/directive_card7.png'
 //картинки инвестиций
-import investment1 from "./imgs/investment1.png"
-import investment2 from "./imgs/investment2.png"
+import investment1 from "./imgs/investment1.avif"
+import investment2 from "./imgs/investment2.avif"
 import investment3 from "./imgs/investment3.png"
-import investment4 from "./imgs/investment4.png"
-import investment5 from "./imgs/investment5.png"
-import investment6 from "./imgs/investment6.png"
-import investment7 from "./imgs/investment7.png"
+import investment4 from "./imgs/investment4.avif"
+import investment5 from "./imgs/investment5.avif"
+import investment6 from "./imgs/investment6.avif"
+import investment7 from "./imgs/investment7.avif"
 //картинки услуги "Емкостное оборудование"
 import CapacitiveEquipmentImg0 from "./molecules/servicesContainer/CapacitiveEquipment/imgs/1.png"
 import CapacitiveEquipmentImg1 from "./molecules/servicesContainer/CapacitiveEquipment/imgs/2.png"
@@ -82,6 +83,7 @@ import TechnologicalEquipment from "./molecules/servicesContainer/TechnologicalE
 import MetalStructures from "./molecules/servicesContainer/MetalStructures/MetalStructures";
 import LoadingSystems from "./molecules/servicesContainer/LoadingSystems/LoadingSystems";
 import Accessories from "./molecules/servicesContainer/Accessories/Accessories";
+import ToolMaking from "./molecules/servicesContainer/ToolMaking/ToolMaking";
 
 
 export const links = [
@@ -172,15 +174,16 @@ export const services_cards = [
     { id: 11, title: 'Комплектующие',src:services_card11, link: "/servicePage/11"},
     { id: 12, title: 'Кластерное хромирование',src:services_card12, link: "/servicePage/12"},
     { id: 13, title: 'Очистные сооружения',src:services_card13, link: "/servicePage/13"},
+    { id: 14, title: 'Изготовление инструментов',src:services_card14, link: "/servicePage/14"},
 ]
 export const directive_cards = [
     { id: 1, title: 'машиностроение',src:directive_card1},
-    { id: 2, title: 'Нефтяное, нефтехимическое и газовое оборудование',src:directive_card2},
-    { id: 3, title: 'ГОРно-добывающая промышленность',src:directive_card3},
-    { id: 4, title: 'судостроительный комплекс',src:directive_card4},
-    { id: 5, title: 'атомная энергетика',src:directive_card5},
-    { id: 6, title: 'железно-дорожное оборудование',src:directive_card6},
-    { id: 7, title: 'цементная промышленность и производство бетона',src:directive_card7},
+    { id: 2, title: 'Нефтяное, нефтехимическое и газовое оборудование',src:directive_card2, isBigCard: false},
+    { id: 3, title: 'ГОРно-добывающая промышленность',src:directive_card3, isBigCard: false},
+    { id: 4, title: 'судостроительный комплекс',src:directive_card4, isBigCard: false},
+    { id: 5, title: 'атомная энергетика',src:directive_card5, isBigCard: false},
+    { id: 6, title: 'железно-дорожное оборудование',src:directive_card6, isBigCard: false},
+    { id: 7, title: 'цементная промышленность и производство бетона',src:directive_card7, isBigCard: true},
 ]
 
 export const investment_cards = [
@@ -317,6 +320,7 @@ export const services_menu = [
     { id: 11, title: 'Комплектующие',link: `/servicePage/11`,},
     { id: 12, title: 'Кластерное хромирование',link: `/servicePage/12`,},
     { id: 13, title: 'Очистные сооружения',link: `/servicePage/13`,},
+    { id: 14, title: 'Изготовление инструментов',link: `/servicePage/14`,},
 ]
 
  export const services_pages = [
@@ -333,6 +337,7 @@ export const services_menu = [
      {id: 11, component: <Accessories/>},
      {id: 12, component: <ClusterChrome/>},
      {id: 13, component: <WastewaterTreatment/>},
+     {id: 14, component: <ToolMaking/>},
 ]
 
 export const capacitiveEquipmentImgs = [
