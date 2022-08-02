@@ -67,6 +67,7 @@ export default function Invest() {
                 method: 'POST',
                 body: formData
             });
+            setValue({})
         } catch (error) {
             console.log(error);
         }

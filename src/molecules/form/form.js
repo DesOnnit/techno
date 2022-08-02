@@ -65,6 +65,8 @@ export default function Form() {
                 method: 'POST',
                 body: formData
             });
+            setValue({})
+            setComment("")
         } catch (error) {
             console.log(error);
         }
